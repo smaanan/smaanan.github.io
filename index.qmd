@@ -1,11 +1,35 @@
 ---
-title: "smaanan.github.io"
+title: "Saïd Maanan"
+about:
+  template: trestles
+  image: photo.jpg
+  image-shape: rounded
+  image-width: 15em
+  links: 
+    - icon: <i class="ai ai-google-scholar-square"></i>
+      text: Academicons
+      href: https://jpswalsh.github.io/academicons/
+    - icon: github
+      text: Github
+      href: https://github.com/smaanan
+    - icon: envelope
+      text: Email
+      href: "mailto:maanan.said@gmail.com"
+    - icon: file-text
+      text: Resume
+      href: Resume.pdf
 ---
 
-This is a Quarto website.
+## About Saïd Maanan
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Welcome to Saïd Maanan's corner! I am a passionate reseacher and educator and currently serve as a Lecturer in Biostatistics and Epidemiology at the Higher Institute of Nursing Professions and Health Techniques in Guelmim, Morocco.
 
-```{r}
-1 + 1
-```
+## Education
+
+University of Auckland \| Auckland, New Zealand PhD in Statistics \| Apr 2015 - Nov 2018
+
+Jiangsu University \| Zhenjiang, China MSc in Statistics \| Sept 2013 - Dec 2014
+
+Mohamed V University \| Rabat, Morocco BA in Economics \| Sept 2008 - June 2012
+
+## Experience

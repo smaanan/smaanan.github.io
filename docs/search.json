@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "smaanan.github.io",
+    "title": "Saïd Maanan",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Welcome to Saïd Maanan’s corner! I am a passionate reseacher and educator and currently serve as a Lecturer in Biostatistics and Epidemiology at the Higher Institute of Nursing Professions and Health Techniques in Guelmim, Morocco."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,26 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#about-saïd-maanan",
+    "href": "index.html#about-saïd-maanan",
+    "title": "Saïd Maanan",
+    "section": "",
+    "text": "Welcome to Saïd Maanan’s corner! I am a passionate reseacher and educator and currently serve as a Lecturer in Biostatistics and Epidemiology at the Higher Institute of Nursing Professions and Health Techniques in Guelmim, Morocco."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Saïd Maanan",
+    "section": "Education",
+    "text": "Education\nUniversity of Auckland | Auckland, New Zealand PhD in Statistics | Apr 2015 - Nov 2018\nJiangsu University | Zhenjiang, China MSc in Statistics | Sept 2013 - Dec 2014\nMohamed V University | Rabat, Morocco BA in Economics | Sept 2008 - June 2012"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Saïd Maanan",
+    "section": "Experience",
+    "text": "Experience"
   }
 ]

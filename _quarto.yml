@@ -1,9 +1,9 @@
 project:
   type: website
   output-dir: docs
-
+  
 website:
-  title: "smaanan.github.io"
+  title: "Saïd Maanan"
   navbar:
     left:
       - href: index.qmd
@@ -12,9 +12,12 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: sandstone
+      dark: sandstone
     css: styles.css
     toc: true
+    page-layout: full
 
 editor: visual
 
