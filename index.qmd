@@ -6,9 +6,9 @@ about:
   image-shape: rounded
   image-width: 15em
   links: 
-    - icon: <i class="ai ai-google-scholar-square"></i>
-      text: Academicons
-      href: https://jpswalsh.github.io/academicons/
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
     - icon: github
       text: Github
       href: https://github.com/smaanan
@@ -20,7 +20,7 @@ about:
       href: Resume.pdf
 ---
 
-## About Saïd Maanan
+## Welcome
 
 Welcome to Saïd Maanan's corner! I am a passionate reseacher and educator and currently serve as a Lecturer in Biostatistics and Epidemiology at the Higher Institute of Nursing Professions and Health Techniques in Guelmim, Morocco.
 
