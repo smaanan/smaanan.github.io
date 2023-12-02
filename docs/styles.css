@@ -11,6 +11,32 @@ p{
   font-style: normal;
 }
 
+
+/* Italic */
+@font-face {
+  font-family: 'TeX Gyre Schola';
+  src: url('fonts/texgyreschola-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'TeX Gyre Schola';
+  src: url('fonts/texgyreschola-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'TeX Gyre Schola';
+  src: url('fonts/texgyreschola-bolditalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
 body {
   font-family: 'TeX Gyre Schola', serif;
 }
