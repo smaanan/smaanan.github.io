@@ -2,3 +2,15 @@
 p{
   text-align: justify;
 }
+
+@font-face {
+  font-family: 'TeX Gyre Schola';
+  src: url('fonts/texgyreschola-regular.woff') format('woff');
+  /* Add additional formats if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'TeX Gyre Schola', serif;
+}
