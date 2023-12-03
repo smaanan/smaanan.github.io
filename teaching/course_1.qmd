@@ -1,0 +1,6 @@
+---
+title: "Biostatistics"
+base: teaching.qmd
+---
+
+Hello this the Biostatistics course I gave to fifth-semester Anesthesia and Reanimation students. The outline is as follows:

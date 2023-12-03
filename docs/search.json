@@ -40,5 +40,19 @@
     "title": "Saïd Maanan",
     "section": "",
     "text": "Welcome to Saïd Maanan’s corner! I am a passionate reseacher and educator and currently serve as a Lecturer in Biostatistics and Epidemiology at the Higher Institute of Nursing Professions and Health Techniques in Guelmim, Morocco."
+  },
+  {
+    "objectID": "teaching/teaching.html",
+    "href": "teaching/teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "These are the courses I have been teaching so far:\n\nBiostatistics"
+  },
+  {
+    "objectID": "teaching/course_1.html",
+    "href": "teaching/course_1.html",
+    "title": "Biostatistics",
+    "section": "",
+    "text": "Hello this the Biostatistics course I gave to fifth-semester Anesthesia and Reanimation students. The outline is as follows:"
   }
 ]
