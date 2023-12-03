@@ -16,6 +16,10 @@ website:
         text: Blog
       - href: about.qmd
         text: About
+      - href: contact.qmd
+        text: Contact
+      - href: resources.qmd
+        text: Resources
 
 format:
   html:
