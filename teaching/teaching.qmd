@@ -4,4 +4,4 @@ title: "Teaching"
 
 These are the courses I have been teaching so far:
 
-- [Biostatistics](course_1.qmd)
+- [Biostatistics](course_1.qmd){target="_blank"}
