@@ -1,15 +1,12 @@
 ---
-title: "blog post title"
-description: "blog post description (appears underneath the title in smaller text) which is included on the listing page"
+title: "First Blog Post"
+description: "Description"
 author:
-  - name: Samantha Csik
-    url: https://samanthacsik.github.io/
-    orcid: 0000-0002-5300-3075
-    affiliation: Master of Environmental Data Science Program @ The Bren School (UCSB) & The National Center for Ecological Analysis & Synthesis
-    affiliation-url: https://ucsb-meds.github.io/ 
-date: 10-24-2022
-categories: [Quarto, R, MEDS] # self-defined categories
+  - name: Said Maanan
+    affiliation: Higher Institute of Nursing and Health Technologies
+date: 12-04-2023
+categories: [R] # self-defined categories
 citation: 
-  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+  url: https://smaanan.github.io/posts/2023-12-04-my-blog-post/ 
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
