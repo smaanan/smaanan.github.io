@@ -2,7 +2,7 @@
 title: "First Blog Post"
 description: "Description"
 author:
-  - name: Said Maanan
+  - name: Saïd Maanan
     affiliation: Higher Institute of Nursing and Health Technologies
 date: 12-04-2023
 categories: [R] # self-defined categories
