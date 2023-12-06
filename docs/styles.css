@@ -36,7 +36,39 @@ p{
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('fonts/texgyrepagella-regular.woff') format('woff');
+  /* Add additional formats if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Italic */
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('fonts/texgyrepagella-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('fonts/texgyrepagella-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('fonts/texgyrepagella-bolditalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
 
 body {
-  font-family: 'TeX Gyre Schola', serif;
+  font-family: 'TeX Gyre Pagella', serif;
 }
