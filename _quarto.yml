@@ -4,6 +4,9 @@ project:
   
 website:
   title: "Saïd Maanan"
+  page-footer: 
+    left: "&copy; Copyright 2023, Saïd Maanan"
+    right: "This page is built with [Quarto](https://quarto.org/)."
   navbar:
     left:
       - href: index.qmd
@@ -31,4 +34,3 @@ format:
     page-layout: full
 
 editor: visual
-
