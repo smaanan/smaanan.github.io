@@ -1,14 +1,12 @@
 ---
-title: "Contact"
+title: "Contact Information"
 ---
-
-# Contact Information
 
 Welcome to my contact page. Feel free to reach out to me using the information below.
 
 ## Email
 
-You can reach me via email at [maanan.said@gmail.com](mailto:maanan.said@gmail.com).
+You can reach me via email at [maanan.said\@gmail.com](mailto:maanan.said@gmail.com).
 
 ## Social Media
 
@@ -16,7 +14,7 @@ Connect with me on [Twitter](https://twitter.com/yourtwitter) or [LinkedIn](http
 
 ## Office Hours
 
-My regular office hours are on [insert days and times here]. During this time, I'm available for in-person or virtual meetings.
+My regular office hours are on \[insert days and times here\]. During this time, I'm available for in-person or virtual meetings.
 
 If you're unable to make it during my office hours, feel free to reach out via email to schedule an appointment.
 
@@ -27,6 +25,5 @@ If you prefer, you can also use the [contact form](link-to-your-contact-form) to
 ## Response Time
 
 I typically respond to emails within 24-48 hours. If your matter is urgent, please mention it in the subject line.
-
 
 Thank you for reaching out! I look forward to connecting with you.
