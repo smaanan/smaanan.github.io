@@ -1,3 +1,10 @@
 ---
 title: "Research"
+bibliography: publications.bib
+nocite: |
+  @*
 ---
+
+## Publications
+
+<!-- {% bibliography %} -->

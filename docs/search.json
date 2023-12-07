@@ -110,5 +110,19 @@
     "title": "First Blog Post",
     "section": "",
     "text": "CitationBibTeX citation:@online{maanan2023,\n  author = {Maanan, Saïd},\n  title = {First {Blog} {Post}},\n  date = {2023-12-04},\n  url = {https://smaanan.github.io/posts/2023-12-04-my-blog-post/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMaanan, Saïd. 2023. “First Blog Post.” December 4, 2023. https://smaanan.github.io/posts/2023-12-04-my-blog-post/."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "%{% bibliography %}"
+  },
+  {
+    "objectID": "research.html#publications",
+    "href": "research.html#publications",
+    "title": "Research",
+    "section": "",
+    "text": "%{% bibliography %}"
   }
 ]
