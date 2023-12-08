@@ -1,6 +1,7 @@
 ---
 title: "Research"
 bibliography: publications.bib
+csl: cambridge-university-press-numeric.csl
 nocite: |
   @*
 ---
