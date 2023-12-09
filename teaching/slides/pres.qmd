@@ -1,0 +1,27 @@
+---
+title: "Probabilité"
+lang: fr
+author: "Saïd Maanan"
+editor: visual
+format:
+  revealjs: 
+    incremental: true
+    theme: [default, custom.scss]
+    footer: ISPITS Guelmim
+    slide-number: true
+    show-slide-number: all
+---
+
+## Rappel théories des ensembles
+
+**Un ensemble est une collection d'objets**. Ces objets sont appelés *éléments* de l'ensemble. Pour dire que $x$ est un élément de l'ensemble $E$, on écrit $x\in E$. Pour dire que $x$ n'est pas un élément de $E$, on écrit $x\not\in E$.
+
+::: {#exm-one}
+Soit l'ensemble $A$ contenant des entiers allant de 1 à 10. Cet ensemble peut décrit de deux manières:
+
+$$
+A = \left\{n\in\mathbb{N}, 1\leq n\leq 10\right\}=\left\{1,2,3,4,5,6,7,8,9,10 \right\}
+$$
+
+`{# {r, engine='tikz'} # \begin{center} #   \begin{tikzpicture} #       \draw[color=red!60, ,thick] (1,1) circle  (2cm); #       \node at (1,1) {1}; #       \node at (0,0) {2}; #       \node at (0,1.5) {3}; #       \node at (2,0.7) {4}; #       \node at (2,1.9) {5}; #       \node at (2,0) {6}; #       \node at (1,0) {7}; #       \node at (1.5,2) {8}; #       \node at (1,2.5) {9}; #       \node at (0.3,2.5) {10}; #   \end{tikzpicture} # \end{center}`
+:::
