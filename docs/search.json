@@ -221,20 +221,20 @@
     "href": "teaching/slides/proba.html",
     "title": "Probabilities Presentation Page",
     "section": "",
-    "text": "Note. To view the slideshow in full screen mode, click inside it and press the “f” key on your keyboard. You can also use the menu by clicking on the icon at the bottom-left of each slide."
+    "text": "It appears you don’t have a PDF plugin for this browser. You can download the PDF file.\n\n\nNote. To view the slideshow in full screen mode, click inside it and press the “f” key on your keyboard. You can also use the menu by clicking on the icon at the bottom-left of each slide."
   },
   {
     "objectID": "teaching/slides/pres.html",
     "href": "teaching/slides/pres.html",
     "title": "Probabilité",
     "section": "",
-    "text": "Un ensemble est une collection d’objets. Ces objets sont appelés éléments de l’ensemble. Pour dire que \\(x\\) est un élément de l’ensemble \\(E\\), on écrit \\(x\\in E\\). Pour dire que \\(x\\) n’est pas un élément de \\(E\\), on écrit \\(x\\not\\in E\\).\n\nExemple 1 Soit l’ensemble \\(A\\) contenant des entiers allant de 1 à 10. Cet ensemble peut décrit de deux manières:\n\\[\nA = \\left\\{n\\in\\mathbb{N}, 1\\leq n\\leq 10\\right\\}=\\left\\{1,2,3,4,5,6,7,8,9,10 \\right\\}\n\\]\n{# {r, engine='tikz'} # \\begin{center} #   \\begin{tikzpicture} #       \\draw[color=red!60, ,thick] (1,1) circle  (2cm); #       \\node at (1,1) {1}; #       \\node at (0,0) {2}; #       \\node at (0,1.5) {3}; #       \\node at (2,0.7) {4}; #       \\node at (2,1.9) {5}; #       \\node at (2,0) {6}; #       \\node at (1,0) {7}; #       \\node at (1.5,2) {8}; #       \\node at (1,2.5) {9}; #       \\node at (0.3,2.5) {10}; #   \\end{tikzpicture} # \\end{center}"
+    "text": "Un ensemble est une collection d’objets. Ces objets sont appelles"
   },
   {
     "objectID": "teaching/slides/pres.html#rappel-théories-des-ensembles",
     "href": "teaching/slides/pres.html#rappel-théories-des-ensembles",
     "title": "Probabilité",
-    "section": "Rappel théories des ensembles",
-    "text": "Rappel théories des ensembles\nUn ensemble est une collection d’objets. Ces objets sont appelés éléments de l’ensemble. Pour dire que \\(x\\) est un élément de l’ensemble \\(E\\), on écrit \\(x\\in E\\). Pour dire que \\(x\\) n’est pas un élément de \\(E\\), on écrit \\(x\\not\\in E\\).\n\nExemple 1 Soit l’ensemble \\(A\\) contenant des entiers allant de 1 à 10. Cet ensemble peut décrit de deux manières:\n\\[\nA = \\left\\{n\\in\\mathbb{N}, 1\\leq n\\leq 10\\right\\}=\\left\\{1,2,3,4,5,6,7,8,9,10 \\right\\}\n\\]\n{# {r, engine='tikz'} # \\begin{center} #   \\begin{tikzpicture} #       \\draw[color=red!60, ,thick] (1,1) circle  (2cm); #       \\node at (1,1) {1}; #       \\node at (0,0) {2}; #       \\node at (0,1.5) {3}; #       \\node at (2,0.7) {4}; #       \\node at (2,1.9) {5}; #       \\node at (2,0) {6}; #       \\node at (1,0) {7}; #       \\node at (1.5,2) {8}; #       \\node at (1,2.5) {9}; #       \\node at (0.3,2.5) {10}; #   \\end{tikzpicture} # \\end{center}\n\n\n\nISPITS Guelmim"
+    "section": "",
+    "text": "Un ensemble est une collection d’objets. Ces objets sont appelles"
   }
 ]
