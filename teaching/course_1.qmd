@@ -9,9 +9,9 @@ This page contains an outline of the topics, content, and assignments for the qu
 ::: column-screen-inset
 | **Week** | **Date** | **Topic** | **Prepare** | **Slides** | **Activity** | **Lab** |
 |:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
-|  **1**   |          |           |             |     [🖥](slides/theorie_des_ensembles.qmd "Théorie des Ensembles")       |              |         |
-|  **2**   |          |           |             |     [🖥](slides/analyse_combinatoire.qmd "Analyse Combinatoire")      |              |         |
-|  **3**   |          |           |             |     [🖥](slides/probabilite_conditionnelle.qmd "Probabilite Conditionnelle")       |              |         |
+|  **1**   |          |     Théorie des Ensembles      |             |     [🖥](slides/theorie_des_ensembles.qmd "Théorie des Ensembles")       |              |         |
+|  **2**   |          |     Analyse Combinatoire      |             |     [🖥](slides/analyse_combinatoire.qmd "Analyse Combinatoire")      |              |         |
+|  **3**   |          |     Probabilité Conditionnelle      |             |     [🖥](slides/probabilite_conditionnelle.qmd "Probabilite Conditionnelle")       |              |         |
 |  **4**   |          |           |             |            |              |         |
 |  **5**   |          |           |             |            |              |         |
 |  **6**   |          |           |             |            |              |         |
