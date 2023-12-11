@@ -10,7 +10,7 @@ This page contains an outline of the topics, content, and assignments for the qu
 | **Week** | **Date** | **Topic** | **Prepare** | **Slides** | **Activity** | **Lab** |
 |:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |  **1**   |          |           |             |     [🖥](slides/theorie_des_ensembles.qmd "Théorie des Ensembles")       |              |         |
-|  **2**   |          |           |             |            |              |         |
+|  **2**   |          |           |             |     [🖥](slides/analyse_combinatoire.qmd "Analyse Combinatoire")      |              |         |
 |  **3**   |          |           |             |            |              |         |
 |  **4**   |          |           |             |            |              |         |
 |  **5**   |          |           |             |            |              |         |
