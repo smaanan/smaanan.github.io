@@ -53,7 +53,7 @@
     "href": "teaching/course_1.html",
     "title": "Biostatistics",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nLecture Slides\nActivity\nLab\nCritique\nProject\n\n\n\n\n0\nSun, April 2\nWelcome to Stat 313 Course Set-up\n📖\n\n\n\n\n\n\n\n1\nTue, April 4\nCourse Structure & Statistics Review\n📖\n🖥 | | | | |\n\n\n\n\n\n\n\nThu, April 6\nIntroduction to Data\n\n🖥 | | 💻 | | |\n\n\n\n\n\n\n\nSun, April 9\nLab 1 Due\n\n\n\n💻  🗝\n\n\n\n\n2\nTue, April 11\nVisualizing & Summarizing Numerical Variables\n📖\n🖥\n\n\n\n\n\n\n\nThu, April 13\nThe Flaws of Averages\n\n🖥\n\n💻\n\n\n\n\n\nSun, April 16\nLab 2 Due\n\n\n\n💻  🗝\n\n\n\n\n3\nTue, April 18 class held asynchronously\nIncorporating Categorical Variables\n📖\n🖥\n\n\n\n\n\n\n\nThu, April 20\nEthics & Categorical Variables\n\n🖥\n\n💻\n✍\n\n\n\n\nSun, April 23\nStatistical Critique 1 &  Lab 3 Due\n\n\n\n💻  🗝\n✍  🗝\n\n\n\n4\nTue, April 25\nIntroduction to Linear Regression\n📖\n🖥\n\n\n\n\n\n\n\nThu, April 27\nThe Ugly History of Linear Regression\n\n🖥\n\n💻\n\n📁\n\n\n\nSun, April 30\nMidterm Project Proposal Due\n\n\n\n\n\n📁  🗝\n\n\n5\nTue, May 2\nIntroduction to Multiple Linear Regression\n📖\n🖥\n\n\n\n\n\n\n\nThu, May 4\nWork Day – Coding a Multiple Linear Regression\n\n🖥\n📋\n\n\n📁  ✅\n\n\n\nSun, May 7\nMidterm Project First Draft Due\n\n\n\n\n\n📁  🗝\n\n\n6\nTue, May 9\nVariable Selection in Multiple Linear Regression\n📖\n🖥\n📋\n\n\n\n\n\n\nThu, May 11\nMachine Learning\n\n🖥\n\n💻\n\n\n\n\n\nSun, May 14\nMidterm Project Final Draft Due\n\n\n\n\n\n📁  🗝\n\n\n7\nTue, May 16\nSampling Variability\n📖\n🖥\n📋\n\n\n\n\n\n\nThu, May 18\nConfidence Intervals\n\n🖥\n📋\n💻\n\n\n\n\n\nSun, May 21\nLab 7 Due\n\n\n\n💻  🗝\n\n\n\n\n8\nTue, May 23\np-values & Hypothesis Tests\n📖\n🖥\n\n\n\n\n\n\n\nThu, May 25\nSimulation-based Methods vs. Theory-based Methods\n\n🖥\n\n💻\n✍\n\n\n\n\nSun, May 28\nStatistical Critique 2 &  Lab 8 Due\n\n\n\n💻  🗝\n✍  🗝\n\n\n\n9\nThis week all classes are held asynchronously\nOne-Way Analysis of Variance\n📖\n🖥\nUse these slides as an additional resource!\n📋\nStep-by-step guide for selecting a model for the Final Project\n\n\n\n📁  Sections of the Final Project will be due throughout the week\n\n\n\nWed, May 31\n\n\n\n\n\n\nIntroduction Due\n\n\n\nFri, June 2\n\n\n\n\n\n\nMethods Due\n\n\n\nSun, June 4\nFinal Project First Draft Due\n\n\n\n\n\nComplete First Draft Due\n📁  🗝\n\n\n10\nTue, June 6\nTwo-Way ANOVA Models\n📖\n🖥\n\n\n\n\n\n\n\nThu, June 8\nLast Day of STAT 313\n\n🖥\n📋  📋  📋\n\n\n📁  ✅\n\n\n\nSun, June 11\nFinal Project Final Draft Due\n\n\n\n\n\n📁  🗝\n\n\nFinals Week\nThu, June 15\nFinal Presentations\n\n\n\n\n\n📁"
+    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nActivity\nLab\n\n\n\n\n1\n\n\n\n🖥\n\n\n\n\n2\n\n\n\n\n\n\n\n\n3\n\n\n\n\n\n\n\n\n4\n\n\n\n\n\n\n\n\n5\n\n\n\n\n\n\n\n\n6\n\n\n\n\n\n\n\n\n7\n\n\n\n\n\n\n\n\n8\n\n\n\n\n\n\n\n\n9\n\n\n\n\n\n\n\n\n10\n\n\n\n\n\n\n\n\n11\n\n\n\n\n\n\n\n\n12"
   },
   {
     "objectID": "contact.html",
@@ -236,5 +236,12 @@
     "title": "Probabilité",
     "section": "",
     "text": "Un ensemble est une collection d’objets. Ces objets sont appelles"
+  },
+  {
+    "objectID": "teaching/slides/theorie_des_ensembles.html",
+    "href": "teaching/slides/theorie_des_ensembles.html",
+    "title": "Probabilities Presentation Page",
+    "section": "",
+    "text": "It appears you don’t have a PDF plugin for this browser. You can download the PDF file.\n\n\nNote. To view the slideshow in full screen mode, click inside it and press the “f” key on your keyboard. You can also use the menu by clicking on the icon at the bottom-left of each slide."
   }
 ]
