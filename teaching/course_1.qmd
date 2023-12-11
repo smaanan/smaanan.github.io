@@ -11,7 +11,7 @@ This page contains an outline of the topics, content, and assignments for the qu
 |:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |  **1**   |          |           |             |     [🖥](slides/theorie_des_ensembles.qmd "Théorie des Ensembles")       |              |         |
 |  **2**   |          |           |             |     [🖥](slides/analyse_combinatoire.qmd "Analyse Combinatoire")      |              |         |
-|  **3**   |          |           |             |            |              |         |
+|  **3**   |          |           |             |     [🖥](slides/probabilite_conditionnelle.qmd "Probabilite Conditionnelle")       |              |         |
 |  **4**   |          |           |             |            |              |         |
 |  **5**   |          |           |             |            |              |         |
 |  **6**   |          |           |             |            |              |         |

@@ -1,0 +1,12 @@
+---
+title: "Probabilite Conditionnelle"
+format: html
+---
+
+<object data="./probabilite_conditionnelle.pdf" type="application/pdf" width="100%" height="600px">
+
+<p>It appears you don't have a PDF plugin for this browser. You can <a href="./probabilite_conditionnelle.pdf">download the PDF file.</a></p>
+
+</object>
+
+*Note.* To view the slideshow in full screen mode, click inside it and press the "f" key on your keyboard.<br /> You can also use the menu by clicking on the icon at the bottom-left of each slide.
