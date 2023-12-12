@@ -8,17 +8,17 @@ This page contains an outline of the topics, content, and assignments for the qu
 
 ::: column-screen-inset
 | **Week** | **Date** | **Topic** | **Prepare** | **Slides** | **Activity** | **Lab** |
-|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
-|  **1**   |          |     Théorie des Ensembles      |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}](slides/theorie_des_ensembles.qmd "Théorie des Ensembles")       |      [{{< fa laptop >}}]()        |    [{{< fa clipboard >}}]()     |
-|  **2**   |          |     Analyse Combinatoire      |       [{{< fa book-open >}}]()      |     [{{< fa file-powerpoint >}}](slides/analyse_combinatoire.qmd "Analyse Combinatoire")      |       [{{< fa laptop >}}]()       |    [{{< fa clipboard >}}]()     |
-|  **3**   |          |     Probabilité Conditionnelle      |       [{{< fa book-open >}}]()      |     [{{< fa file-powerpoint >}}](slides/probabilite_conditionnelle.qmd "Probabilite Conditionnelle")       |       [{{< fa laptop >}}]()       |     [{{< fa clipboard >}}]()    |
-|  **4**   |          |           |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
-|  **5**   |          |           |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
-|  **6**   |          |           |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
-|  **7**   |          |           |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
-|  **8**   |          |           |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
-|  **9**   |          |           |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
-|  **10**  |          |           |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
-|  **11**  |          |           |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
-|  **12**  |          |           |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |    [{{< fa clipboard >}}]()     |
+|:---------:|:---------:|:---------|:---------:|:---------:|:---------:|:---------:|
+|  **1**   |    2023-12-12      |     Théorie des Ensembles      |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}](slides/theorie_des_ensembles.qmd "Théorie des Ensembles")       |      [{{< fa laptop >}}]()        |    [{{< fa clipboard >}}]()     |
+|  **2**   |    2023-12-12      |     Analyse Combinatoire      |       [{{< fa book-open >}}]()      |     [{{< fa file-powerpoint >}}](slides/analyse_combinatoire.qmd "Analyse Combinatoire")      |       [{{< fa laptop >}}]()       |    [{{< fa clipboard >}}]()     |
+|  **3**   |    2023-12-12      |     Probabilité Conditionnelle      |       [{{< fa book-open >}}]()      |     [{{< fa file-powerpoint >}}](slides/probabilite_conditionnelle.qmd "Probabilité Conditionnelle")       |       [{{< fa laptop >}}]()       |     [{{< fa clipboard >}}]()    |
+|  **4**   |    2023-12-12      |     Lois Discrètes      |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
+|  **5**   |    2023-12-12      |     Lois Continues      |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
+|  **6**   |    2023-12-12      |     Échantillonnage      |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
+|  **7**   |    2023-12-12      |     Estimation      |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
+|  **8**   |    2023-12-12      |     Tests d'hypothèse (1 échantillon)      |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
+|  **9**   |    2023-12-12      |     Tests d'hypothèse (2 échantillons)      |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
+|  **10**  |    2023-12-12      |     Tests d'hypothèse (Proportions)      |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
+|  **11**  |    2023-12-12      |     Corrélation et Régression      |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |     [{{< fa clipboard >}}]()    |
+|  **12**  |    2023-12-12      |     Application sur R      |      [{{< fa book-open >}}]()       |     [{{< fa file-powerpoint >}}]()       |      [{{< fa laptop >}}]()        |    [{{< fa clipboard >}}]()     |
 :::
