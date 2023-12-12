@@ -6,7 +6,7 @@ tbl-colwidths: [5,10,15,5,5,5,5]
 
 This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.
 
-::: column-screen-inset
+::: column-body
 | **Week** |  **Date**  | **Topic**                          |       **Prepare**        |                                            **Slides**                                            |     **Activity**      |         **Lab**          |
 |:---------:|:---------:|:----------|:---------:|:---------:|:---------:|:---------:|
 |  **1**   | 2023-12-12 | Théorie des Ensembles              | [{{< fa book-open >}}]() |      [{{< fa file-powerpoint >}}](slides/theorie_des_ensembles.qmd "Théorie des Ensembles")      | [{{< fa laptop >}}]() | [{{< fa clipboard >}}]() |
