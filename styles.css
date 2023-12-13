@@ -3,6 +3,91 @@ p{
   text-align: justify;
 }
 
-body{
-  font-family: 'CMU Bright', Sans-Serif;
+@font-face {
+  font-family: 'TeX Gyre Schola';
+  src: url('fonts/texgyreschola-regular.woff') format('woff');
+  /* Add additional formats if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Italic */
+@font-face {
+  font-family: 'TeX Gyre Schola';
+  src: url('fonts/texgyreschola-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'TeX Gyre Schola';
+  src: url('fonts/texgyreschola-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'TeX Gyre Schola';
+  src: url('fonts/texgyreschola-bolditalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('fonts/texgyrepagella-regular.woff') format('woff');
+  /* Add additional formats if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Italic */
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('fonts/texgyrepagella-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('fonts/texgyrepagella-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('fonts/texgyrepagella-bolditalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*body {
+  font-family: 'TeX Gyre Pagella', serif;
+}*/
+
+
+iframe.slide-deck {
+  border: 3px solid #dee2e6;
+  width: 100%;
+  height: 475px;
+}
+
+/*.clickable-button {
+
+}*/
+
+.unclickable-button {
+  pointer-events: none; /* Make the button unclickable */
+}
+
+.unclickable-button i {
+  color: #dddddd; /* Very light grey color */
 }
