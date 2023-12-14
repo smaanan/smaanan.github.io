@@ -73,9 +73,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -183,35 +183,42 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="R" data-listing-date-sort="1701648000000" data-listing-file-modified-sort="1701724497319" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./posts/2023-12-04-my-blog-post/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="R" data-listing-date-sort="1701648000000" data-listing-file-modified-sort="1702531129373" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./posts/2023-12-04-my-blog-post/index.html"> <img src="./posts/2023-12-04-my-blog-post/nature.jpg" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/2023-12-04-my-blog-post/index.html">
+<h3 class="no-anchor listing-title">
 First Blog Post
-</h5>
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
 </div>
 </div>
-<div class="card-text listing-description">
-Description
+<a href="./posts/2023-12-04-my-blog-post/index.html">
+<div class="listing-description">
+<p>Description</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Saïd Maanan
+</a>
 </div>
+<div class="metadata">
+<a href="./posts/2023-12-04-my-blog-post/index.html">
 <div class="listing-date">
 Dec 4, 2023
 </div>
-</div>
-</div>
+<div class="listing-author">
+Saïd Maanan
 </div>
 </a>
+</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">
