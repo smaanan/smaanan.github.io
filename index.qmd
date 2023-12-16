@@ -26,10 +26,10 @@ Welcome to Saïd Maanan's corner! I am a passionate reseacher and educator and c
 
 ## Education
 
-University of Auckland \| Auckland, New Zealand PhD in Statistics \| Apr 2015 - Nov 2018
-
-Jiangsu University \| Zhenjiang, China MSc in Statistics \| Sept 2013 - Dec 2014
-
-Mohamed V University \| Rabat, Morocco BA in Economics \| Sept 2008 - June 2012
+I successfully earned my Ph.D. in Statistics from the University of Auckland on June 10, 2019. My doctoral research concentrated on innovating effective algorithms for estimating directed and undirected graphs in multivariate time series. Additionally, I introduced a novel information-theoretic criterion specifically tailored for optimal performance with time series data. Before pursuing my Ph.D., I achieved distinction in both a Master's degree in Statistics and a Bachelor's degree in Economics.
 
 ## Experience
+
+After completing my Ph.D., I held various research and teaching positions. As a postdoctoral researcher at Aalto University's Department of Computer Science, I developed a profound understanding of the intersections between statistics and computer science. Additionally, my role as an adjunct lecturer in probability at Mohammed V University in Rabat enhanced my pedagogical skills through teaching a diverse group of students.
+
+Currently, I am a lecturer in biostatistics at the Higher Institute of Nursing and Health Technology in Guelmim, Morocco. This position has strengthened my practical applications of statistical methods in health care and medicine, sparking my passion for the field.
