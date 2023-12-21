@@ -10,19 +10,15 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - href: ./teaching/teaching.qmd
-        text: Teaching
+        text: About Me
       - href: research.qmd
         text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: ./teaching/teaching.qmd
+        text: Teaching
       - href: blog.qmd
         text: Blog
-      - href: about.qmd
-        text: About
-      - href: contact.qmd
-        text: Contact
-      - href: resources.qmd
-        text: Resources
 
 format:
   html:
