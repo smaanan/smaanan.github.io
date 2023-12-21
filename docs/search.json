@@ -102,14 +102,14 @@
     "href": "blog.html",
     "title": "My Blog",
     "section": "",
-    "text": "First Blog Post\n\n\n\n\n\n\n\nR\n\n\n\n\nDescription\n\n\n\n\n\n\nDec 4, 2023\n\n\nSaïd Maanan\n\n\n\n\n\n\nNo matching items"
+    "text": "Hello World!\n\n\n\n\n\n\n\nR\n\n\n\n\nMy first blog post on this website.\n\n\n\n\n\n\nDec 4, 2023\n\n\nSaïd Maanan\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2023-12-04-my-blog-post/index.html",
     "href": "posts/2023-12-04-my-blog-post/index.html",
-    "title": "First Blog Post",
+    "title": "Hello World!",
     "section": "",
-    "text": "CitationBibTeX citation:@online{maanan2023,\n  author = {Maanan, Saïd},\n  title = {First {Blog} {Post}},\n  date = {2023-12-04},\n  url = {https://smaanan.github.io/posts/2023-12-04-my-blog-post/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMaanan, Saïd. 2023. “First Blog Post.” December 4, 2023. https://smaanan.github.io/posts/2023-12-04-my-blog-post/."
+    "text": "Welcome and thank you for taking the time to check my first blog post on this website. This page serves as draft only, I want to see what code and figures would look like in case I generate them from inside Quarto.\n\nA Box Plot\n\nboxplot(len ~ dose, data = ToothGrowth, frame = FALSE,\n        border = c(\"#999999\", \"#E69F00\", \"#56B4E9\"))\n\n\n\n\n\n\nA Line Plot\n\nx &lt;- 1:10\ny1 &lt;- x*x\ny2  &lt;- 2*y1\n\n# Create a first line\nplot(x, y1, type = \"b\", frame = FALSE, pch = 19, \n     col = \"red\", xlab = \"x\", ylab = \"y\")\n# Add a second line\nlines(x, y2, pch = 18, col = \"blue\", type = \"b\", lty = 2)\n# Add a legend to the plot\nlegend(\"topleft\", legend=c(\"Line 1\", \"Line 2\"),\n       col=c(\"red\", \"blue\"), lty = 1:2, cex=0.8)"
   },
   {
     "objectID": "research.html",

@@ -1,0 +1,16 @@
+{
+  "hash": "f61865672a495308bbe284bec55c0a06",
+  "result": {
+    "markdown": "---\ntitle: \"Hello World!\"\ndescription: \"My first blog post on this website.\"\nauthor:\n  - name: Saïd Maanan\ndate: 12-04-2023\ncategories: [R] \nimage: nature.jpg\ndraft: false \n---\n\n\nWelcome and thank you for taking the time to check my first blog post on this website. This page serves as draft only, I want to see what code and figures would look like in case I generate them from inside Quarto.\n\n### A Box Plot\n\n\n::: {.cell}\n\n```{.r .cell-code}\nboxplot(len ~ dose, data = ToothGrowth, frame = FALSE,\n        border = c(\"#999999\", \"#E69F00\", \"#56B4E9\"))\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n### A Line Plot\n\n\n::: {.cell}\n\n```{.r .cell-code}\nx <- 1:10\ny1 <- x*x\ny2  <- 2*y1\n\n# Create a first line\nplot(x, y1, type = \"b\", frame = FALSE, pch = 19, \n     col = \"red\", xlab = \"x\", ylab = \"y\")\n# Add a second line\nlines(x, y2, pch = 18, col = \"blue\", type = \"b\", lty = 2)\n# Add a legend to the plot\nlegend(\"topleft\", legend=c(\"Line 1\", \"Line 2\"),\n       col=c(\"red\", \"blue\"), lty = 1:2, cex=0.8)\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
