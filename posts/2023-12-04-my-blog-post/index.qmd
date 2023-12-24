@@ -7,7 +7,6 @@ date: 12-04-2023
 categories: [R] 
 image: nature.jpg
 draft: false 
-code-fold: true
 ---
 
 :::{.column-body}
