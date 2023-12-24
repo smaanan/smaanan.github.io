@@ -109,7 +109,7 @@
     "href": "posts/2023-12-04-my-blog-post/index.html",
     "title": "Hello World!",
     "section": "",
-    "text": "Welcome and thank you for taking the time to check my first blog post on this website. This page serves as draft only, I want to see what code and figures would look like in case I generate them from inside Quarto.\n\nA Box Plot\n\nboxplot(len ~ dose, data = ToothGrowth, frame = FALSE,\n        border = c(\"#999999\", \"#E69F00\", \"#56B4E9\"))\n\n\n\n\n\n\nA Line Plot\n\nx &lt;- 1:10\ny1 &lt;- x*x\ny2  &lt;- 2*y1\n\n# Create a first line\nplot(x, y1, type = \"b\", frame = FALSE, pch = 19, \n     col = \"red\", xlab = \"x\", ylab = \"y\")\n# Add a second line\nlines(x, y2, pch = 18, col = \"blue\", type = \"b\", lty = 2)\n# Add a legend to the plot\nlegend(\"topleft\", legend=c(\"Line 1\", \"Line 2\"),\n       col=c(\"red\", \"blue\"), lty = 1:2, cex=0.8)"
+    "text": "Welcome and thank you for taking the time to check my first blog post on this website. This page serves as draft only, I want to see what code and figures would look like in case I generate them from inside Quarto.\n\nA Box Plot\n\nboxplot(len ~ dose, data = ToothGrowth, frame = FALSE,\n        border = c(\"#999999\", \"#E69F00\", \"#56B4E9\"))\n\n\n\n\n\n\n\n\n\n\nA Line Plot\n\nx &lt;- 1:10\ny1 &lt;- x*x\ny2  &lt;- 2*y1\n\n# Create a first line\nplot(x, y1, type = \"b\", frame = FALSE, pch = 19, \n     col = \"red\", xlab = \"x\", ylab = \"y\")\n# Add a second line\nlines(x, y2, pch = 18, col = \"blue\", type = \"b\", lty = 2)\n# Add a legend to the plot\nlegend(\"topleft\", legend=c(\"Line 1\", \"Line 2\"),\n       col=c(\"red\", \"blue\"), lty = 1:2, cex=0.8)"
   },
   {
     "objectID": "research.html",
