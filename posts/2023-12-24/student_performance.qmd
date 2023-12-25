@@ -1,0 +1,14 @@
+---
+title: "Nursing Student Performance"
+description: "A Time Series Approach."
+author:
+  - name: Saïd Maanan
+date: 24-12-2023
+categories: [R] 
+image: nature.jpg
+draft: true 
+---
+
+:::{.column-body}
+In this blog we will check the performance of students in one of Morocco's nursing institutes to see if a pattern exists.
+:::
