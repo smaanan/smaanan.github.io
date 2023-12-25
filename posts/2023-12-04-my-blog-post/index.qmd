@@ -9,7 +9,7 @@ image: nature.jpg
 draft: false 
 ---
 
-:::{.column-body}
+::: column-body
 Welcome and thank you for taking the time to check my first blog post on this website. This page serves as draft only, I want to see what code and figures would look like in case I generate them from inside Quarto.
 
 ### A Box Plot

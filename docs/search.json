@@ -102,7 +102,7 @@
     "href": "blog.html",
     "title": "My Blog",
     "section": "",
-    "text": "Hello World!\n\n\n\n\n\n\n\nR\n\n\n\n\nMy first blog post on this website.\n\n\n\n\n\n\nDec 4, 2023\n\n\nSaïd Maanan\n\n\n\n\n\n\nNo matching items"
+    "text": "Nursing Student Performance\n\n\n\n\n\n\n\nR\n\n\n\n\nA Time Series Approach.\n\n\n\n\n\n\nDec 12, 2024\n\n\nSaïd Maanan\n\n\n\n\n\n\n  \n\n\n\n\nHello World!\n\n\n\n\n\n\n\nR\n\n\n\n\nMy first blog post on this website.\n\n\n\n\n\n\nDec 4, 2023\n\n\nSaïd Maanan\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2023-12-04-my-blog-post/index.html",
@@ -348,5 +348,12 @@
     "title": "Publications",
     "section": "",
     "text": "Welcome to my publications page."
+  },
+  {
+    "objectID": "posts/2023-12-24/student_performance.html",
+    "href": "posts/2023-12-24/student_performance.html",
+    "title": "Nursing Student Performance",
+    "section": "",
+    "text": "In this blog we will check the performance of students in one of Morocco’s nursing institutes to see if a pattern exists."
   }
 ]

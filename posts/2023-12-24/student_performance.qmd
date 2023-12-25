@@ -5,8 +5,8 @@ author:
   - name: Saïd Maanan
 date: 24-12-2023
 categories: [R] 
-image: nature.jpg
-draft: true 
+image: bird.jpg
+draft: false 
 ---
 
 :::{.column-body}
