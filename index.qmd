@@ -6,9 +6,9 @@ about:
   image-shape: rounded
   image-width: 15em
   links: 
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
+    - icon: youtube
+      text: YouTube
+      href: https://www.youtube.com/channel/UCjYP8nFHt9SoGZBqLZw-LUQ
     - icon: github
       text: Github
       href: https://github.com/smaanan
