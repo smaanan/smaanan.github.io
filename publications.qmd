@@ -1,5 +1,13 @@
 ---
 title: "Publications"
+bibliography: publications.bib
+csl: cambridge-university-press-numeric.csl
+nocite: |
+  @*
 ---
 
 Welcome to my publications page.
+
+## Publications
+
+<!-- {% bibliography %} -->
