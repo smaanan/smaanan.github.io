@@ -26,10 +26,13 @@ plot(data.Ex10.1$Temperature, data.Ex10.1$HrtRt,
 
 ```{r}
 lm.Ex10.1 <- lm(HrtRt ~ Temperature, data = data.Ex10.1)
+lm.Ex10.1
 ```
 
 ```{r}
-
+plot(data.Ex10.1, main="Heart Rate vs Temperature",
+     xlab="Temperature (C)", ylab="BPM")
+abline(lm.Ex10.1, col = "red")
 ```
 
 ```{r}
