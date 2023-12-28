@@ -366,6 +366,54 @@ Temperature  1.178944 2.371056</code></pre>
 <p><img src="student_performance_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>data.Ex10<span class="fl">.2</span> <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">"http://waveland.com/Glover-Mitchell/Example10-2.txt"</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>data.Ex10<span class="fl">.2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Length Width
+1    10.7   5.8
+2    11.0   6.0
+3     9.5   5.0
+4    11.1   6.0
+5    10.3   5.3
+6    10.7   5.8
+7     9.9   5.2
+8    10.6   5.7
+9    10.0   5.3
+10   12.0   6.3</code></pre>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(data.Ex10<span class="fl">.2</span><span class="sc">$</span>Length, data.Ex10<span class="fl">.2</span><span class="sc">$</span>Width, <span class="at">main =</span> <span class="st">"Scatterplot Width versus Length"</span>, <span class="at">xlab =</span> <span class="st">"Length (cm)"</span>, <span class="at">ylab =</span> <span class="st">"Width (cm)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="student_performance_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(data.Ex10<span class="fl">.2</span><span class="sc">$</span>Length, data.Ex10<span class="fl">.2</span><span class="sc">$</span>Width, <span class="at">method =</span> <span class="st">"pearson"</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's product-moment correlation
+
+data:  data.Ex10.2$Length and data.Ex10.2$Width
+t = 11.136, df = 8, p-value = 3.781e-06
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.8713272 0.9929217
+sample estimates:
+     cor 
+0.969226 </code></pre>
+</div>
+</div>
 </div>
 
 
