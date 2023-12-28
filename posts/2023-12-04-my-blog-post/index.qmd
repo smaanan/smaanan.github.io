@@ -14,14 +14,14 @@ Welcome and thank you for taking the time to check my first blog post on this we
 
 ### A Box Plot
 
-```{r,echo=TRUE, fig.width=4, fig.height=4, fig.align='center'}
+```{r,echo=TRUE, fig.width=5, fig.height=5, fig.align='center'}
 boxplot(len ~ dose, data = ToothGrowth, frame = FALSE,
         border = c("#999999", "#E69F00", "#56B4E9"))
 ```
 
 ### A Line Plot
 
-```{r, echo=TRUE, fig.width=4, fig.height=4, fig.align='center'}
+```{r, echo=TRUE, fig.width=5, fig.height=5, fig.align='center'}
 x <- 1:10
 y1 <- x*x
 y2  <- 2*y1
