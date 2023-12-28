@@ -9,6 +9,39 @@ image: bird.jpg
 draft: false 
 ---
 
-:::{.column-body}
+::: column-body
 In this blog we will check the performance of students in one of Morocco's nursing institutes to see if a pattern exists.
+
+```{r}
+data.Ex10.1 <- read.table("http://waveland.com/Glover-Mitchell/Example10-1.txt", header = TRUE)
+tail(data.Ex10.1, n=3)
+```
+
+```{r}
+plot(data.Ex10.1$Temperature, data.Ex10.1$HrtRt,
+     main = "Heart Rate vs Temperature",
+     xlab = "Temperature (C)",
+     ylab = "BPM")
+```
+
+```{r}
+lm.Ex10.1 <- lm(HrtRt ~ Temperature, data = data.Ex10.1)
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
 :::

@@ -1,0 +1,16 @@
+{
+  "hash": "0168310b44d8619c2783960b2dd6cdd2",
+  "result": {
+    "markdown": "---\ntitle: \"Nursing Student Performance\"\ndescription: \"A Time Series Approach.\"\nauthor:\n  - name: Saïd Maanan\ndate: 24-12-2023\ncategories: [R] \nimage: bird.jpg\ndraft: false \n---\n\n\n::: column-body\nIn this blog we will check the performance of students in one of Morocco's nursing institutes to see if a pattern exists.\n\n\n::: {.cell}\n\n```{.r .cell-code}\ndata.Ex10.1 <- read.table(\"http://waveland.com/Glover-Mitchell/Example10-1.txt\", header = TRUE)\ntail(data.Ex10.1, n=3)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n  Temperature HrtRt\n7          14    32\n8          16    29\n9          18    32\n```\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(data.Ex10.1$Temperature, data.Ex10.1$HrtRt,\n     main = \"Heart Rate vs Temperature\",\n     xlab = \"Temperature (C)\",\n     ylab = \"BPM\")\n```\n\n::: {.cell-output-display}\n![](student_performance_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nlm.Ex10.1 <- lm(HrtRt ~ Temperature, data = data.Ex10.1)\n```\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\n:::\n",
+    "supporting": [
+      "student_performance_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
