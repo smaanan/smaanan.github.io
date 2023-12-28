@@ -287,6 +287,85 @@ Temperature  1.372241 2.177759</code></pre>
 Temperature  1.178944 2.371056</code></pre>
 </div>
 </div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>new <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Temperature =</span> <span class="dv">9</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>new</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Temperature
+1           9</code></pre>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(lm.Ex10<span class="fl">.1</span>, new, <span class="at">interval =</span> <span class="st">"confidence"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>       fit      lwr      upr
+1 18.11389 15.99541 20.23237</code></pre>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>new <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Temperature =</span> <span class="fu">c</span>(<span class="dv">9</span>, <span class="dv">17</span>, <span class="dv">21</span>))</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>new</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Temperature
+1           9
+2          17
+3          21</code></pre>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(lm.Ex10<span class="fl">.1</span>, new, <span class="at">interval =</span> <span class="st">"confidence"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>       fit      lwr      upr
+1 18.11389 15.99541 20.23237
+2 32.31389 28.81043 35.81735
+3 39.41389 34.51963 44.30814</code></pre>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>fitted <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">predict</span>(lm.Ex10<span class="fl">.1</span>, <span class="at">interval =</span> <span class="st">"confidence"</span>))</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>fitted</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>        fit       lwr       upr
+1  5.688889  1.853856  9.523922
+2  9.238889  6.050556 12.427221
+3 12.788889 10.158078 15.419700
+4 16.338889 14.108510 18.569268
+5 19.888889 17.809050 21.968728
+6 23.438889 21.208510 25.669268
+7 26.988889 24.358078 29.619700
+8 30.538889 27.350556 33.727221
+9 34.088889 30.253856 37.923922</code></pre>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(data.Ex10<span class="fl">.1</span>, <span class="at">main =</span> <span class="st">"Heart Rate versus Temperature"</span>, <span class="at">xlab =</span> <span class="st">"Temperature (C)"</span>, <span class="at">ylab =</span> <span class="st">"BPM"</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(lm.Ex10<span class="fl">.1</span>, <span class="at">col =</span> <span class="st">"red"</span>)</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(data.Ex10<span class="fl">.1</span><span class="sc">$</span>Temperature, fitted<span class="sc">$</span>lwr, <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lty =</span> <span class="st">"longdash"</span>)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(data.Ex10<span class="fl">.1</span><span class="sc">$</span>Temperature, fitted<span class="sc">$</span>upr, <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lty =</span> <span class="st">"longdash"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="student_performance_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
 </div>
 
 

@@ -48,4 +48,39 @@ confint(lm.Ex10.1)
 confint(lm.Ex10.1, level = 0.99)
 ```
 
+```{r}
+new <- data.frame(Temperature = 9)
+new
+```
+
+```{r}
+predict(lm.Ex10.1, new, interval = "confidence")
+```
+
+```{r}
+new <- data.frame(Temperature = c(9, 17, 21))
+new
+```
+
+```{r}
+predict(lm.Ex10.1, new, interval = "confidence")
+```
+
+```{r}
+fitted <- as.data.frame(predict(lm.Ex10.1, interval = "confidence"))
+fitted
+```
+
+```{r}
+plot(data.Ex10.1, main = "Heart Rate versus Temperature", xlab = "Temperature (C)", ylab = "BPM")
+
+abline(lm.Ex10.1, col = "red")
+
+lines(data.Ex10.1$Temperature, fitted$lwr, col = "blue", lty = "longdash")
+lines(data.Ex10.1$Temperature, fitted$upr, col = "blue", lty = "longdash")
+```
+
+```{r}
+
+```
 :::
