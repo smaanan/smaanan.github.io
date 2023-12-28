@@ -36,15 +36,16 @@ abline(lm.Ex10.1, col = "red")
 ```
 
 ```{r}
-
+aov.Ex10.1 <- aov(HrtRt ~ Temperature, data = data.Ex10.1)
+summary(aov.Ex10.1)
 ```
 
 ```{r}
-
+confint(lm.Ex10.1)
 ```
 
 ```{r}
-
+confint(lm.Ex10.1, level = 0.99)
 ```
 
 :::
