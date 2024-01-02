@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -115,11 +134,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#publications" id="toc-publications" class="nav-link active" data-scroll-target="#publications">Publications</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -139,10 +164,25 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>Welcome to my publications page.</p>
+<section id="publications" class="level2">
+
+<!-- {% bibliography %} -->
 
 
 
-</main> <!-- /main -->
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Publications</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-maanan16" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">S. Maanan, B. Dumitrescu, &amp; C. D. Giurcăneanu, Renormalized maximum likelihood for multivariate autoregressive models. <em>Proceedings of 2016 european signal processing conference (EUSIPCO 2016)</em> (Budapest, Hungary, 2016), pp. 193–197.</div>
+</div>
+<div id="ref-maanan17" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">S. Maanan, B. Dumitrescu, &amp; C. D. Giurcăneanu, Conditional independence graphs for multivariate autoregressive models by convex optimization: <span>E</span>fficient algorithms. <em>Signal Processing</em>, <strong>133</strong> (2017) 122–134.</div>
+</div>
+<div id="ref-maanan18" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">S. Maanan, B. Dumitrescu, &amp; C. D. Giurcăneanu, <a href="http://www.mdpi.com/1099-4300/20/1/76">Maximum entropy expectation-maximization algorithm for fitting latent-variable graphical models to multivariate time series</a>. <em>Entropy</em>, <strong>20</strong> (2018).</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -9,6 +9,87 @@ image: bird.jpg
 draft: false 
 ---
 
-:::{.column-body}
+::: column-body
 In this blog we will check the performance of students in one of Morocco's nursing institutes to see if a pattern exists.
+
+```{r}
+data.Ex10.1 <- read.table("http://waveland.com/Glover-Mitchell/Example10-1.txt", header = TRUE)
+tail(data.Ex10.1, n=3)
+```
+
+```{r}
+plot(data.Ex10.1$Temperature, data.Ex10.1$HrtRt,
+     main = "Heart Rate vs Temperature",
+     xlab = "Temperature (C)",
+     ylab = "BPM")
+```
+
+```{r}
+lm.Ex10.1 <- lm(HrtRt ~ Temperature, data = data.Ex10.1)
+lm.Ex10.1
+```
+
+```{r}
+plot(data.Ex10.1, main="Heart Rate vs Temperature",
+     xlab="Temperature (C)", ylab="BPM")
+abline(lm.Ex10.1, col = "red")
+```
+
+```{r}
+aov.Ex10.1 <- aov(HrtRt ~ Temperature, data = data.Ex10.1)
+summary(aov.Ex10.1)
+```
+
+```{r}
+confint(lm.Ex10.1)
+```
+
+```{r}
+confint(lm.Ex10.1, level = 0.99)
+```
+
+```{r}
+new <- data.frame(Temperature = 9)
+new
+```
+
+```{r}
+predict(lm.Ex10.1, new, interval = "confidence")
+```
+
+```{r}
+new <- data.frame(Temperature = c(9, 17, 21))
+new
+```
+
+```{r}
+predict(lm.Ex10.1, new, interval = "confidence")
+```
+
+```{r}
+fitted <- as.data.frame(predict(lm.Ex10.1, interval = "confidence"))
+fitted
+```
+
+```{r}
+plot(data.Ex10.1, main = "Heart Rate versus Temperature", xlab = "Temperature (C)", ylab = "BPM")
+
+abline(lm.Ex10.1, col = "red")
+
+lines(data.Ex10.1$Temperature, fitted$lwr, col = "blue", lty = "longdash")
+lines(data.Ex10.1$Temperature, fitted$upr, col = "blue", lty = "longdash")
+```
+
+```{r}
+data.Ex10.2 <- read.table("http://waveland.com/Glover-Mitchell/Example10-2.txt", header = TRUE)
+data.Ex10.2
+```
+
+```{r}
+plot(data.Ex10.2$Length, data.Ex10.2$Width, main = "Scatterplot Width versus Length", xlab = "Length (cm)", ylab = "Width (cm)")
+```
+
+```{r}
+cor.test(data.Ex10.2$Length, data.Ex10.2$Width, method = "pearson", conf.level = 0.95)
+```
 :::
