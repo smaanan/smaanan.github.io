@@ -2,7 +2,7 @@
 title: "Saïd Maanan"
 about:
   template: trestles
-  image: Greek_uc_sigma.svg
+  image: photo.jpg
   image-shape: rounded
   image-width: 15em
   links: 
