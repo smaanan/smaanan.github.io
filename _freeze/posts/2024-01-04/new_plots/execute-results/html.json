@@ -1,0 +1,16 @@
+{
+  "hash": "142395d9277cf9949d71b86a5918650a",
+  "result": {
+    "markdown": "---\ntitle: \"New Plots for My Course\"\ndescription: \"Made Using R.\"\nauthor:\n  - name: Saïd Maanan\ndate: 04-01-2024\ncategories: [R] \nimage: beaver.jpeg\ndraft: false \n---\n\n\n::: column-body\n\n\n::: {.cell}\n\n```{.r .cell-code}\nset.seed(123)\n# Create sample data\nn <- 100\nx <- seq(1, n)\ny_no_relation <- rnorm(n)\ny_negative_nonlinear <- -log(x) + rnorm(n, sd = 0.25)\ny_u_shaped <- -(x - 50)^2 + 2500 + rnorm(n, sd = 50)\ny_s_shaped <- 1 / (1 + exp(-(x - 50) / 10)) * 100 + rnorm(n, sd = 5)\ny_negative_linear <- -2 * x + rnorm(n, sd = 20)\ny_positive_linear <- 2 * x + rnorm(n, sd = 20)\n\n# Create true U-shaped curve\ny_u_shaped <- 0.1 * x^2 - 10 * x + 400 + rnorm(n, sd = 50)\n\n# Create plots\npar(mfrow = c(2, 3), mar = c(4, 4, 2, 1))\n\nplot(x, y_no_relation, main = \"No Relation\", type = \"p\", bg = \"blue\", pch = 21, col = \"black\", ylab = \"y\")\nplot(x, y_negative_nonlinear, main = \"Negative Non-linear\", type = \"p\", bg = \"green\", pch = 21, col = \"black\", ylab = \"y\")\nplot(x, y_u_shaped, main = \"U-shaped\", type = \"p\", bg = \"red\", pch = 21, col = \"black\", ylab = \"y\")\nplot(x, y_s_shaped, main = \"S-shaped\", type = \"p\", bg = \"purple\", pch = 21, col = \"black\", ylab = \"y\")\nplot(x, y_negative_linear, main = \"Negative Linear\", type = \"p\", bg = \"orange\", pch = 21, col = \"black\", ylab = \"y\")\nplot(x, y_positive_linear, main = \"Positive Linear\", type = \"p\", bg = \"brown\", pch = 21, col = \"black\", ylab = \"y\")\n```\n\n::: {.cell-output-display}\n![](new_plots_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\n# Create sample data\nn <- 100\nx <- rnorm(n)\ny <- 2 * x + rnorm(n)\n\n# Calculate mean of y\nmean_y <- mean(y)\n\n# Create scatterplot\nplot(x, y, main = \"\",\n     xlab = \"X\", ylab = \"Y\", pch = 16, col = \"blue\")\n\n# Add horizontal line for the mean of y\nabline(h = mean_y, col = \"red\", lty = 2)\n\n# Add vertical lines for each observation\nfor (i in 1:n) {\n  if (y[i] > mean_y) {\n    lines(c(x[i], x[i]), c(y[i], mean_y), col = \"blue\", lty = 2)\n  } else {\n    lines(c(x[i], x[i]), c(y[i], mean_y), col = \"orange\", lty = 2)\n  }\n}\n```\n\n::: {.cell-output-display}\n![](new_plots_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\n# Fit a linear regression model\nfit <- lm(y ~ x)\n\n# Create scatterplot\nplot(x, y, main = \"\",\n     xlab = \"X\", ylab = \"Y\", pch = 16, col = \"blue\")\n\n# Add best fit line\nabline(fit, col = \"red\", lty = 2)\n\n# Add vertical lines for each observation\nfor (i in 1:n) {\n  if (y[i] > predict(fit, data.frame(x = x[i]))) {\n    lines(c(x[i], x[i]), c(y[i], predict(fit, data.frame(x = x[i]))), col = \"blue\", lty = 2)\n  } else {\n    lines(c(x[i], x[i]), c(y[i], predict(fit, data.frame(x = x[i]))), col = \"orange\", lty = 2)\n  }\n}\n```\n\n::: {.cell-output-display}\n![](new_plots_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n:::",
+    "supporting": [
+      "new_plots_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

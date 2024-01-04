@@ -1,0 +1,87 @@
+---
+title: "New Plots for My Course"
+description: "Made Using R."
+author:
+  - name: Saïd Maanan
+date: 04-01-2024
+categories: [R] 
+image: beaver.jpeg
+draft: false 
+---
+
+::: column-body
+
+```{r}
+set.seed(123)
+# Create sample data
+n <- 100
+x <- seq(1, n)
+y_no_relation <- rnorm(n)
+y_negative_nonlinear <- -log(x) + rnorm(n, sd = 0.25)
+y_u_shaped <- -(x - 50)^2 + 2500 + rnorm(n, sd = 50)
+y_s_shaped <- 1 / (1 + exp(-(x - 50) / 10)) * 100 + rnorm(n, sd = 5)
+y_negative_linear <- -2 * x + rnorm(n, sd = 20)
+y_positive_linear <- 2 * x + rnorm(n, sd = 20)
+
+# Create true U-shaped curve
+y_u_shaped <- 0.1 * x^2 - 10 * x + 400 + rnorm(n, sd = 50)
+
+# Create plots
+par(mfrow = c(2, 3), mar = c(4, 4, 2, 1))
+
+plot(x, y_no_relation, main = "No Relation", type = "p", bg = "blue", pch = 21, col = "black", ylab = "y")
+plot(x, y_negative_nonlinear, main = "Negative Non-linear", type = "p", bg = "green", pch = 21, col = "black", ylab = "y")
+plot(x, y_u_shaped, main = "U-shaped", type = "p", bg = "red", pch = 21, col = "black", ylab = "y")
+plot(x, y_s_shaped, main = "S-shaped", type = "p", bg = "purple", pch = 21, col = "black", ylab = "y")
+plot(x, y_negative_linear, main = "Negative Linear", type = "p", bg = "orange", pch = 21, col = "black", ylab = "y")
+plot(x, y_positive_linear, main = "Positive Linear", type = "p", bg = "brown", pch = 21, col = "black", ylab = "y")
+```
+
+```{r}
+# Create sample data
+n <- 100
+x <- rnorm(n)
+y <- 2 * x + rnorm(n)
+
+# Calculate mean of y
+mean_y <- mean(y)
+
+# Create scatterplot
+plot(x, y, main = "",
+     xlab = "X", ylab = "Y", pch = 16, col = "blue")
+
+# Add horizontal line for the mean of y
+abline(h = mean_y, col = "red", lty = 2)
+
+# Add vertical lines for each observation
+for (i in 1:n) {
+  if (y[i] > mean_y) {
+    lines(c(x[i], x[i]), c(y[i], mean_y), col = "blue", lty = 2)
+  } else {
+    lines(c(x[i], x[i]), c(y[i], mean_y), col = "orange", lty = 2)
+  }
+}
+```
+
+```{r}
+# Fit a linear regression model
+fit <- lm(y ~ x)
+
+# Create scatterplot
+plot(x, y, main = "",
+     xlab = "X", ylab = "Y", pch = 16, col = "blue")
+
+# Add best fit line
+abline(fit, col = "red", lty = 2)
+
+# Add vertical lines for each observation
+for (i in 1:n) {
+  if (y[i] > predict(fit, data.frame(x = x[i]))) {
+    lines(c(x[i], x[i]), c(y[i], predict(fit, data.frame(x = x[i]))), col = "blue", lty = 2)
+  } else {
+    lines(c(x[i], x[i]), c(y[i], predict(fit, data.frame(x = x[i]))), col = "orange", lty = 2)
+  }
+}
+```
+
+:::
