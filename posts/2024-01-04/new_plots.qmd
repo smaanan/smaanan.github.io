@@ -3,7 +3,7 @@ title: "New Plots for My Course"
 description: "Made Using R."
 author:
   - name: Saïd Maanan
-date: 04-01-2024
+date: 01-04-2024
 categories: [R] 
 image: beaver.jpeg
 draft: false 

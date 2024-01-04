@@ -3,7 +3,7 @@ title: "Nursing Student Performance"
 description: "A Time Series Approach."
 author:
   - name: Saïd Maanan
-date: 24-12-2023
+date: 12-24-2023
 categories: [R] 
 image: bird.jpg
 draft: false 

@@ -2,8 +2,8 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/2023-12-24/student_performance.html",
       "/posts/2024-01-04/new_plots.html",
+      "/posts/2023-12-24/student_performance.html",
       "/posts/2023-12-04-my-blog-post/index.html"
     ]
   }
