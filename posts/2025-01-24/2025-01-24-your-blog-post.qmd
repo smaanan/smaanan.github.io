@@ -1,10 +1,35 @@
 ---
-title: "Your Blog Post Title"
-description: "A brief description of the post."
-author: "Your Name"
+title: "Upcoming Event: SEA2025 Conference"
+description: "Join us for the 12th Days of Econometrics for Finance and the 19th World Conference of the Spatial Econometrics Association in May 2025!"
+author: "Said Maanan"
 date: 2025-01-25
-categories: [Research, Conferences] # Optional
+categories: [Conferences, Events]
 draft: false
 ---
 
-Hello World!
+### Upcoming Event: JEF2025 and SEA2025
+
+We are thrilled to announce that the **12th Days of Econometrics for Finance (JEF2025)** will be held jointly with the **19th World Conference of the Spatial Econometrics Association (SEA2025)** and the **Spatial Econometrics Advanced Institute (SEAI)**.
+
+**Event Details**:
+- **Dates**: May 2nd-8th, 2025  
+- **Location**: Mohammed V University, Rabat, Morocco  
+
+This collaborative event brings together academics, practitioners, and policymakers to discuss cutting-edge research in:
+- Financial and spatial econometrics  
+- Applied economics  
+- Risk management  
+- Big Data analytics  
+
+**Highlights**:
+- Celebrate the 51st anniversary of the introduction of "Spatial Econometrics" by Jean Paelinck.  
+- Attend talks and workshops led by experts.  
+- Network with leading researchers and industry professionals from around the globe.  
+
+For more information, download the [conference pamphlet (PDF)](path/to/your/pdf/pamphlet.pdf).  
+
+Join us in Rabat to be part of this enriching experience!
+
+---
+
+Would you like me to help format the PDF link or guide you on where to place the file for your website? Let me know!
