@@ -1,6 +1,6 @@
 ---
-title: "Upcoming Event: SEA2025 Conference"
-description: "Join us for the 12th Days of Econometrics for Finance and the 19th World Conference of the Spatial Econometrics Association in May 2025!"
+title: "SEA2025 Conference"
+description: "May 2nd-8th, 2025"
 author:
   - name: Saïd Maanan
 date: 01-25-2025
@@ -9,29 +9,25 @@ image: conference.jpg
 draft: false
 ---
 
-### Upcoming Event: JEF2025 and SEA2025
+### JEF2025 and SEA2025
 
-We are thrilled to announce that the **12th Days of Econometrics for Finance (JEF2025)** will be held jointly with the **19th World Conference of the Spatial Econometrics Association (SEA2025)** and the **Spatial Econometrics Advanced Institute (SEAI)**.
+I am thrilled to announce that the **12th Days of Econometrics for Finance (JEF2025)** will be held jointly with the **19th World Conference of the Spatial Econometrics Association (SEA2025)** and the **Spatial Econometrics Advanced Institute (SEAI)**.
 
-**Event Details**:
 - **Dates**: May 2nd-8th, 2025  
-- **Location**: Mohammed V University, Rabat, Morocco  
+- **Location**: Rabat, Morocco  
 
 This collaborative event brings together academics, practitioners, and policymakers to discuss cutting-edge research in:
+
 - Financial and spatial econometrics  
 - Applied economics  
-- Risk management  
 - Big Data analytics  
 
 **Highlights**:
+
 - Celebrate the 51st anniversary of the introduction of "Spatial Econometrics" by Jean Paelinck.  
 - Attend talks and workshops led by experts.  
 - Network with leading researchers and industry professionals from around the globe.  
 
-For more information, download the [conference pamphlet (PDF)](path/to/your/pdf/pamphlet.pdf).  
+For more information, download the [conference pamphlet (PDF)](SEA 2025 CFP_23.12.2024.pdf).  
 
 Join us in Rabat to be part of this enriching experience!
-
----
-
-Would you like me to help format the PDF link or guide you on where to place the file for your website? Let me know!
