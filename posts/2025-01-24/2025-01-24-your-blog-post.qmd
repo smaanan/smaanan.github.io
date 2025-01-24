@@ -1,9 +1,11 @@
 ---
 title: "Upcoming Event: SEA2025 Conference"
 description: "Join us for the 12th Days of Econometrics for Finance and the 19th World Conference of the Spatial Econometrics Association in May 2025!"
-author: "Said Maanan"
-date: 2025-01-25
+author:
+  - name: Saïd Maanan
+date: 01-25-2025
 categories: [Conferences, Events]
+image: conference.jpg
 draft: false
 ---
 
