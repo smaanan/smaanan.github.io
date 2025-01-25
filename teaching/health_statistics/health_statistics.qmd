@@ -1,0 +1,10 @@
+---
+title: "Health Statistics"
+---
+
+This page provides resources for the course **Health Statistics**.
+
+Materials will include lecture notes, problem sets, and additional readings.
+
+- [Lecture Notes](#){target="_blank"} *(Coming soon)*
+- [Problem Sets](#){target="_blank"} *(Coming soon)*

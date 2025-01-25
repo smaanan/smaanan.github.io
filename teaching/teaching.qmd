@@ -5,3 +5,4 @@ title: "Teaching"
 These are the courses I have been teaching so far:
 
 -   [Biostatistics](biostatistics/biostatistics.qmd){target="_blank"}
+-   [Health Statistics](health_statistics/health_statistics.qmd){target="_blank"}
