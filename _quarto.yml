@@ -15,7 +15,7 @@ website:
         text: Research
       - href: publications.qmd
         text: Publications
-      - href: teaching/
+      - href: teaching/teaching.qmd
         text: "Teaching"
       - href: blog.qmd
         text: Blog
