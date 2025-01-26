@@ -1,10 +1,17 @@
 ---
 title: "Health Statistics"
+base: teaching.qmd
+tbl-colwidths: [5,10,15,5,5,5,5]
 ---
 
-This page provides resources for the course **Health Statistics**.
+This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.
 
-Materials will include lecture notes, problem sets, and additional readings.
-
-- [Lecture Notes](#){target="_blank"} *(Coming soon)*
-- [Problem Sets](#){target="_blank"} *(Coming soon)*
+::: column-body
+| **Week** |  **Date**  | **Chapter**                    |            **Readings**             |            **Slides**            |          **Activities**          |            **Assignments**        |
+|:-------:|:----------:|:------------------------------|:-----------------------------------:|:---------------------------------:|:--------------------------------:|:----------------------------------:|
+|  **1**  | YYYY-MM-DD | Introduction to Health Stats  | [{{< fa book >}}](#){.unclickable-button} | [{{< fa file-powerpoint >}}](#){.unclickable-button} | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|  **2**  | YYYY-MM-DD | Data Collection & Management  | [{{< fa book >}}](#){.unclickable-button} | [{{< fa file-powerpoint >}}](#){.unclickable-button} | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|  **3**  | YYYY-MM-DD | Descriptive Statistics         | [{{< fa book >}}](#){.unclickable-button} | [{{< fa file-powerpoint >}}](#){.unclickable-button} | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|  **4**  | YYYY-MM-DD | Inferential Statistics         | [{{< fa book >}}](#){.unclickable-button} | [{{< fa file-powerpoint >}}](#){.unclickable-button} | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|  **5**  | YYYY-MM-DD | Applications in Public Health  | [{{< fa book >}}](#){.unclickable-button} | [{{< fa file-powerpoint >}}](#){.unclickable-button} | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+:::
