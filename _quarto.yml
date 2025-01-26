@@ -5,7 +5,7 @@ project:
 website:
   title: "Saïd Maanan"
   page-footer: 
-    left: "Copyright &copy; 2023 Saïd Maanan"
+    left: "Copyright &copy; 2023-2025 Saïd Maanan"
     right: "This website is built with [Quarto](https://quarto.org/)."
   navbar:
     left:
