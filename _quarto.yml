@@ -10,15 +10,20 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: About Me
+        text: "About Me"
+        icon: file-earmark-person
       - href: research.qmd
-        text: Research
+        text: "Research"
+        icon: pc-display-horizontal
       - href: publications.qmd
-        text: Publications
+        text: "Publications"
+        icon: file-earmark-pdf
       - href: teaching/teaching.qmd
         text: "Teaching"
+        icon: person-video3
       - href: blog.qmd
-        text: Blog
+        text: "Blog"
+        icon: pencil-square
 
 format:
   html:
