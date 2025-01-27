@@ -181,7 +181,6 @@ window.Quarto = {
     <span class="navbar-title">Saïd Maanan</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -284,7 +283,7 @@ Events
 <div class="metadata">
 <a href="./posts/2025-01-24/2025-01-24-your-blog-post.html" class="no-external">
 <div class="listing-date">
-Jan 25, 2025
+Saturday January 2025
 </div>
 <div class="listing-author">
 Saïd Maanan
@@ -317,7 +316,7 @@ R
 <div class="metadata">
 <a href="./posts/2024-01-04/new_plots.html" class="no-external">
 <div class="listing-date">
-Jan 4, 2024
+Thursday January 2024
 </div>
 <div class="listing-author">
 Saïd Maanan
@@ -350,7 +349,7 @@ R
 <div class="metadata">
 <a href="./posts/2023-12-24/student_performance.html" class="no-external">
 <div class="listing-date">
-Dec 24, 2023
+Sunday December 2023
 </div>
 <div class="listing-author">
 Saïd Maanan
@@ -383,7 +382,7 @@ R
 <div class="metadata">
 <a href="./posts/2023-12-04/index.html" class="no-external">
 <div class="listing-date">
-Dec 4, 2023
+Monday December 2023
 </div>
 <div class="listing-author">
 Saïd Maanan
@@ -395,7 +394,7 @@ Saïd Maanan
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -644,6 +643,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

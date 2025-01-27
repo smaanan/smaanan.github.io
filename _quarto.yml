@@ -7,7 +7,10 @@ website:
   page-footer: 
     left: "Copyright &copy; 2023-2025 Saïd Maanan"
     right: "This website is built with [Quarto](https://quarto.org/)."
+  page-navigation: true
+  back-to-top-navigation: true
   navbar:
+    search: false
     left:
       - href: index.qmd
         text: "About Me"
@@ -31,8 +34,14 @@ format:
     theme: 
       light: flatly
       dark: darkly
+    lang: en
+    date-format: 'dddd MMMM YYYY'
+    email-obfuscation: javascript
+    link-external-newwindow: true
     css: styles.css
     toc: true
     page-layout: full
 
 editor: source
+
+lightbox: auto
