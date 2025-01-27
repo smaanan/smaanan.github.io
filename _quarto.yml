@@ -24,6 +24,7 @@ website:
       - href: blog.qmd
         text: "Blog"
         icon: pencil-square
+  cookie-consent: true
 
 format:
   html:
