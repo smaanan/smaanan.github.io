@@ -36,13 +36,15 @@ typography:
     size: 1em
 defaults:
   bootstrap:
+    defaults:
+      navbar-bg: green
     # bootstrap variable definitions
   quarto:
     format:
       # basic format-specific settings
       html:
-        title-block-banner: green
-        title-block-banner-color: white
+        # title-block-banner: green
+        # title-block-banner-color: white
       revealjs:
   shiny:
     # shiny specific settings
