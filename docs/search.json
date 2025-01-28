@@ -32,7 +32,21 @@
     "href": "teaching/teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "These are the courses I have been teaching so far:\n\nBiostatistics\nHealth Statistics\n\n\n\n\n Back to top"
+    "text": "Below are the courses I am currently teaching:"
+  },
+  {
+    "objectID": "teaching/teaching.html#biostatistics-fall-semester",
+    "href": "teaching/teaching.html#biostatistics-fall-semester",
+    "title": "Teaching",
+    "section": "Biostatistics (Fall Semester)",
+    "text": "Biostatistics (Fall Semester)\nThis course provides a comprehensive introduction to statistical methodologies essential for research in health and life sciences. Students gain a strong foundation in both descriptive and inferential statistics, including techniques for data collection, sampling, estimation, and hypothesis testing. The course covers essential topics such as measures of central tendency and dispersion, correlation, contingency tables, and statistical indices. Practical sessions emphasize hands-on data analysis using statistical software such as SPSS and R, enabling students to apply statistical tools effectively in their final research projects. A significant focus is placed on developing critical thinking skills for interpreting results and making data-driven decisions in the health sector.\nBelow is an outline of the topics, content, and assignments for the course. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\nSemaine\nDate\nChapitre\nLectures\nDiapos\nActivités\nTD\n\n\n\n\n1\n2023-12-12\nThéorie des Ensembles\n\n\n\n\n\n\n2\n2023-12-12\nAnalyse Combinatoire\n\n\n\n\n\n\n3\n2023-12-12\nProbabilité Conditionnelle\n\n\n\n\n\n\n4\n2023-12-12\nLois Discrètes\n\n\n\n\n\n\n5\n2023-12-12\nLois Continues\n\n\n\n\n\n\n6\n2023-12-12\nÉchantillonnage\n\n\n\n\n\n\n7\n2023-12-12\nEstimation\n\n\n\n\n\n\n8\n2023-12-12\nTests d’hypothèse (1 échantillon)\n\n\n\n\n\n\n9\n2023-12-12\nTests d’hypothèse (2 échantillons)\n\n\n\n\n\n\n10\n2023-12-12\nTests d’hypothèse (\\(k\\) échantillons)\n\n\n\n\n\n\n11\n2023-12-12\nCorrélation et Régression\n\n\n\n\n\n\n12\n2023-12-12\nApplication sur R"
+  },
+  {
+    "objectID": "teaching/teaching.html#health-statistics-spring-semester",
+    "href": "teaching/teaching.html#health-statistics-spring-semester",
+    "title": "Teaching",
+    "section": "Health Statistics (Spring Semester)",
+    "text": "Health Statistics (Spring Semester)\nThis course introduces students to the fundamental concepts of epidemiology and health statistics, with a focus on data-driven public health decision-making. Key topics include descriptive and analytical epidemiology, disease surveillance, and health data collection methods. Students learn to calculate and interpret critical epidemiological and statistical indicators such as incidence, prevalence, and mortality rates. The course also covers essential statistical methods for analyzing health data, including measures of central tendency and statistical indices. Through practical case studies and guided projects, students gain experience in conducting health surveys, analyzing data, and presenting findings. Software training, including the use of Epi Info, is incorporated to ensure students develop essential technical competencies.\nBelow is an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nChapter\nReadings\nSlides\nActivities\nAssignments\n\n\n\n\n1\n2025-01-26\nIntroduction to Health Stats\n\n\n\n\n\n\n2\n2025-01-26\nData Collection & Management\n\n\n\n\n\n\n3\n2025-01-26\nDescriptive Statistics\n\n\n\n\n\n\n4\n2025-01-26\nInferential Statistics\n\n\n\n\n\n\n5\n2025-01-26\nApplications in Public Health"
   },
   {
     "objectID": "resources.html",

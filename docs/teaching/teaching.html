@@ -41,6 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-fa24d84f577f00fb98540b5c822e405b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-993fd3db06abf2e528aed51eaa67403a.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -126,11 +157,18 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#biostatistics-fall-semester" id="toc-biostatistics-fall-semester" class="nav-link active" data-scroll-target="#biostatistics-fall-semester">Biostatistics (Fall Semester)</a></li>
+  <li><a href="#health-statistics-spring-semester" id="toc-health-statistics-spring-semester" class="nav-link" data-scroll-target="#health-statistics-spring-semester">Health Statistics (Spring Semester)</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content page-columns page-full column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -139,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -151,13 +189,226 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>These are the courses I have been teaching so far:</p>
-<ul>
-<li><a href="../teaching/biostatistics/biostatistics.html" target="_blank">Biostatistics</a></li>
-<li><a href="../teaching/health_statistics/health_statistics.html" target="_blank">Health Statistics</a></li>
-</ul>
+<p>Below are the courses I am currently teaching:</p>
+<hr>
+<section id="biostatistics-fall-semester" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="biostatistics-fall-semester">Biostatistics (Fall Semester)</h2>
+<p>This course provides a comprehensive introduction to statistical methodologies essential for research in health and life sciences. Students gain a strong foundation in both descriptive and inferential statistics, including techniques for data collection, sampling, estimation, and hypothesis testing. The course covers essential topics such as measures of central tendency and dispersion, correlation, contingency tables, and statistical indices. Practical sessions emphasize hands-on data analysis using statistical software such as SPSS and R, enabling students to apply statistical tools effectively in their final research projects. A significant focus is placed on developing critical thinking skills for interpreting results and making data-driven decisions in the health sector.</p>
+<p>Below is an outline of the topics, content, and assignments for the course. Note that this schedule will be updated as the semester progresses, with all changes documented here.</p>
+<div class="column-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Semaine</strong></th>
+<th style="text-align: center;"><strong>Date</strong></th>
+<th style="text-align: left;"><strong>Chapitre</strong></th>
+<th style="text-align: center;"><strong>Lectures</strong></th>
+<th style="text-align: center;"><strong>Diapos</strong></th>
+<th style="text-align: center;"><strong>Activités</strong></th>
+<th style="text-align: center;"><strong>TD</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">2023-12-12</td>
+<td style="text-align: left;">Théorie des Ensembles</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="biostatistics/slides/theorie_des_ensembles.pdf" target="_blank" title="Théorie des Ensembles"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;">2023-12-12</td>
+<td style="text-align: left;">Analyse Combinatoire</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="biostatistics/slides/analyse_combinatoire.pdf" target="_blank" title="Analyse Combinatoire"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;">2023-12-12</td>
+<td style="text-align: left;">Probabilité Conditionnelle</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="biostatistics/slides/probabilite_conditionnelle.pdf" target="_blank" title="Probabilité Conditionnelle"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">2023-12-12</td>
+<td style="text-align: left;">Lois Discrètes</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="biostatistics/slides/lois_discretes.pdf" target="_blank" title="Lois Discrètes"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">2023-12-12</td>
+<td style="text-align: left;">Lois Continues</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="biostatistics/slides/lois_continues.pdf" target="_blank" title="Lois Continues"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;">2023-12-12</td>
+<td style="text-align: left;">Échantillonnage</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: center;">2023-12-12</td>
+<td style="text-align: left;">Estimation</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>8</strong></td>
+<td style="text-align: center;">2023-12-12</td>
+<td style="text-align: left;">Tests d’hypothèse (1 échantillon)</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="biostatistics/slides/tests_un_echantillon.pdf" target="_blank" title="Tests d'Hypothese I"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>9</strong></td>
+<td style="text-align: center;">2023-12-12</td>
+<td style="text-align: left;">Tests d’hypothèse (2 échantillons)</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="biostatistics/slides/tests_deux_echantillons.pdf" target="_blank" title="Tests d'Hypothese II"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>10</strong></td>
+<td style="text-align: center;">2023-12-12</td>
+<td style="text-align: left;">Tests d’hypothèse (<span class="math inline">\(k\)</span> échantillons)</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="biostatistics/slides/tests_k_echantillons.pdf" target="_blank" title="Tests d'Hypothese III"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>11</strong></td>
+<td style="text-align: center;">2023-12-12</td>
+<td style="text-align: left;">Corrélation et Régression</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>12</strong></td>
+<td style="text-align: center;">2023-12-12</td>
+<td style="text-align: left;">Application sur R</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+</section>
+<section id="health-statistics-spring-semester" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="health-statistics-spring-semester">Health Statistics (Spring Semester)</h2>
+<p>This course introduces students to the fundamental concepts of epidemiology and health statistics, with a focus on data-driven public health decision-making. Key topics include descriptive and analytical epidemiology, disease surveillance, and health data collection methods. Students learn to calculate and interpret critical epidemiological and statistical indicators such as incidence, prevalence, and mortality rates. The course also covers essential statistical methods for analyzing health data, including measures of central tendency and statistical indices. Through practical case studies and guided projects, students gain experience in conducting health surveys, analyzing data, and presenting findings. Software training, including the use of Epi Info, is incorporated to ensure students develop essential technical competencies.</p>
+<p>Below is an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.</p>
+<div class="column-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Week</strong></th>
+<th style="text-align: center;"><strong>Date</strong></th>
+<th style="text-align: left;"><strong>Chapter</strong></th>
+<th style="text-align: center;"><strong>Readings</strong></th>
+<th style="text-align: center;"><strong>Slides</strong></th>
+<th style="text-align: center;"><strong>Activities</strong></th>
+<th style="text-align: center;"><strong>Assignments</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">2025-01-26</td>
+<td style="text-align: left;">Introduction to Health Stats</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;">2025-01-26</td>
+<td style="text-align: left;">Data Collection &amp; Management</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;">2025-01-26</td>
+<td style="text-align: left;">Descriptive Statistics</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">2025-01-26</td>
+<td style="text-align: left;">Inferential Statistics</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">2025-01-26</td>
+<td style="text-align: left;">Applications in Public Health</td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-file-powerpoint" aria-label="file-powerpoint"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td style="text-align: center;"><a href="#" class="unclickable-button"><i class="fa-solid fa-users-rectangle" aria-label="users-rectangle"></i></a></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,8 +1,49 @@
 ---
 title: "Teaching"
+tbl-colwidths: [5,10,15,5,5,5,5]
 ---
 
-These are the courses I have been teaching so far:
+Below are the courses I am currently teaching:
 
--   [Biostatistics](biostatistics/biostatistics.qmd){target="_blank"}
--   [Health Statistics](health_statistics/health_statistics.qmd){target="_blank"}
+---
+
+## Biostatistics (Fall Semester)
+
+This course provides a comprehensive introduction to statistical methodologies essential for research in health and life sciences. Students gain a strong foundation in both descriptive and inferential statistics, including techniques for data collection, sampling, estimation, and hypothesis testing. The course covers essential topics such as measures of central tendency and dispersion, correlation, contingency tables, and statistical indices. Practical sessions emphasize hands-on data analysis using statistical software such as SPSS and R, enabling students to apply statistical tools effectively in their final research projects. A significant focus is placed on developing critical thinking skills for interpreting results and making data-driven decisions in the health sector.
+
+Below is an outline of the topics, content, and assignments for the course. Note that this schedule will be updated as the semester progresses, with all changes documented here.
+
+::: column-body
+| **Semaine** |  **Date**  | **Chapitre**                       |               **Lectures**                |                                                    **Diapos**                                                     |                **Activités**                |                        **TD**                        |
+|:---------:|:---------:|:----------|:---------:|:---------:|:---------:|:---------:|
+|    **1**    | 2023-12-12 | Théorie des Ensembles              | [{{< fa book >}}](#){.unclickable-button} |      [{{< fa file-powerpoint >}}](biostatistics/slides/theorie_des_ensembles.pdf "Théorie des Ensembles"){target="_blank"}      | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|    **2**    | 2023-12-12 | Analyse Combinatoire               | [{{< fa book >}}](#){.unclickable-button} |       [{{< fa file-powerpoint >}}](biostatistics/slides/analyse_combinatoire.pdf "Analyse Combinatoire"){target="_blank"}       | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|    **3**    | 2023-12-12 | Probabilité Conditionnelle         | [{{< fa book >}}](#){.unclickable-button} | [{{< fa file-powerpoint >}}](biostatistics/slides/probabilite_conditionnelle.pdf "Probabilité Conditionnelle"){target="_blank"} | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|    **4**    | 2023-12-12 | Lois Discrètes                     | [{{< fa book >}}](#){.unclickable-button} |             [{{< fa file-powerpoint >}}](biostatistics/slides/lois_discretes.pdf "Lois Discrètes"){target="_blank"}             | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|    **5**    | 2023-12-12 | Lois Continues                     | [{{< fa book >}}](#){.unclickable-button} |             [{{< fa file-powerpoint >}}](biostatistics/slides/lois_continues.pdf "Lois Continues"){target="_blank"}             | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|    **6**    | 2023-12-12 | Échantillonnage                    | [{{< fa book >}}](#){.unclickable-button} |             [{{< fa file-powerpoint >}}](#){.unclickable-button}                                | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|    **7**    | 2023-12-12 | Estimation                         | [{{< fa book >}}](#){.unclickable-button} |                               [{{< fa file-powerpoint >}}](#){.unclickable-button}                                | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|    **8**    | 2023-12-12 | Tests d'hypothèse (1 échantillon)  | [{{< fa book >}}](#){.unclickable-button} |             [{{< fa file-powerpoint >}}](biostatistics/slides/tests_un_echantillon.pdf "Tests d'Hypothese I"){target="_blank"}                                | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|    **9**    | 2023-12-12 | Tests d'hypothèse (2 échantillons) | [{{< fa book >}}](#){.unclickable-button} |                               [{{< fa file-powerpoint >}}](biostatistics/slides/tests_deux_echantillons.pdf "Tests d'Hypothese II"){target="_blank"}                                | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|   **10**    | 2023-12-12 | Tests d'hypothèse ($k$ échantillons)    | [{{< fa book >}}](#){.unclickable-button} |                               [{{< fa file-powerpoint >}}](biostatistics/slides/tests_k_echantillons.pdf "Tests d'Hypothese III"){target="_blank"}                                | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|   **11**    | 2023-12-12 | Corrélation et Régression          | [{{< fa book >}}](#){.unclickable-button} |                               [{{< fa file-powerpoint >}}](#){.unclickable-button}                                | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|   **12**    | 2023-12-12 | Application sur R                  | [{{< fa book >}}](#){.unclickable-button} |                               [{{< fa file-powerpoint >}}](#){.unclickable-button}                                | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+:::
+
+---
+
+## Health Statistics (Spring Semester)
+
+This course introduces students to the fundamental concepts of epidemiology and health statistics, with a focus on data-driven public health decision-making. Key topics include descriptive and analytical epidemiology, disease surveillance, and health data collection methods. Students learn to calculate and interpret critical epidemiological and statistical indicators such as incidence, prevalence, and mortality rates. The course also covers essential statistical methods for analyzing health data, including measures of central tendency and statistical indices. Through practical case studies and guided projects, students gain experience in conducting health surveys, analyzing data, and presenting findings. Software training, including the use of Epi Info, is incorporated to ensure students develop essential technical competencies.
+
+Below is an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.
+
+::: column-body
+| **Week** |  **Date**  | **Chapter**                    |            **Readings**             |            **Slides**            |          **Activities**          |            **Assignments**        |
+|:-------:|:----------:|:------------------------------|:-----------------------------------:|:---------------------------------:|:--------------------------------:|:----------------------------------:|
+|  **1**  | 2025-01-26 | Introduction to Health Stats  | [{{< fa book >}}](#){.unclickable-button} | [{{< fa file-powerpoint >}}](#){.unclickable-button} | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|  **2**  | 2025-01-26 | Data Collection & Management  | [{{< fa book >}}](#){.unclickable-button} | [{{< fa file-powerpoint >}}](#){.unclickable-button} | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|  **3**  | 2025-01-26 | Descriptive Statistics         | [{{< fa book >}}](#){.unclickable-button} | [{{< fa file-powerpoint >}}](#){.unclickable-button} | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|  **4**  | 2025-01-26 | Inferential Statistics         | [{{< fa book >}}](#){.unclickable-button} | [{{< fa file-powerpoint >}}](#){.unclickable-button} | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+|  **5**  | 2025-01-26 | Applications in Public Health  | [{{< fa book >}}](#){.unclickable-button} | [{{< fa file-powerpoint >}}](#){.unclickable-button} | [{{< fa laptop >}}](#){.unclickable-button} | [{{< fa users-rectangle >}}](#){.unclickable-button} |
+:::
