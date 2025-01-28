@@ -151,7 +151,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
+    "text": "About this site.\n\nlibrary(leaflet)\n\nleaflet() %&gt;%\n  addTiles() %&gt;%\n  setView(lng = -6.8498, lat = 33.9716, zoom = 14) %&gt;%  # Replace with your coordinates\n  addMarkers(lng = -6.8498, lat = 33.9716, popup = \"Mohammed V University\")\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "blog.html",

@@ -2,8 +2,13 @@
 title: "About"
 ---
 
-About this site
+About this site.
 
-```{r}
-1 + 1
+```{r, echo=TRUE}
+library(leaflet)
+
+leaflet() %>%
+  addTiles() %>%
+  setView(lng = -6.8498, lat = 33.9716, zoom = 14) %>%  # Replace with your coordinates
+  addMarkers(lng = -6.8498, lat = 33.9716, popup = "Mohammed V University")
 ```

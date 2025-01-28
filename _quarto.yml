@@ -15,9 +15,6 @@ website:
       - href: research.qmd
         text: "Research"
         icon: pc-display-horizontal
-      - href: publications.qmd
-        text: "Publications"
-        icon: file-earmark-pdf
       - href: teaching/teaching.qmd
         text: "Teaching"
         icon: person-video3
