@@ -12,9 +12,6 @@ website:
   navbar:
     search: false
     left:
-      - href: index.qmd
-        text: "About Me"
-        icon: file-earmark-person
       - href: research.qmd
         text: "Research"
         icon: pc-display-horizontal
@@ -27,6 +24,9 @@ website:
       - href: blog.qmd
         text: "Blog"
         icon: pencil-square
+      - href: about.qmd
+        text: "About Me"
+        icon: file-earmark-person
   cookie-consent: true
 
 format:
