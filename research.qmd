@@ -6,6 +6,62 @@ nocite: |
   @*
 ---
 
-## Publications
+---
+
+## **Vector Autoregressive Model**
+
+The analysis of multivariate time series is crucial for modeling and forecasting interconnected time-dependent data. One of the most commonly used models in this field is the *Vector Autoregressive (VAR) Model*. The VAR model of order $p$ is defined as:
+
+$$
+\mathbf{Y}_t = \mathbf{A}_1 \mathbf{Y}_{t-1} + \mathbf{A}_2 \mathbf{Y}_{t-2} + \cdots + \mathbf{A}_p \mathbf{Y}_{t-p} + \mathbf{u}_t
+$$
+
+where:
+
+* $\mathbf{Y}_t$ is a $k \times 1$ vector of time series variables.
+* $\mathbf{A}_i$ are $k \times k$ coefficient matrices.
+* $\mathbf{u}_t$ is a white noise vector with zero mean and covariance matrix $\Sigma$.
+
+My research focuses on enhancing the accuracy of conditional independence graph estimation for multivariate time series data. This involves developing robust methodologies to capture and visualize the dynamic interdependencies between multiple time series variables.
+
+---
+
+## **Quantile Regression**
+
+Quantile regression provides a more comprehensive analysis of the relationship between variables than mean regression by modeling conditional quantiles.
+
+The LAD regression estimates the median of the dependent variable by minimizing the sum of absolute residuals. Given data points $(x_i, y_i)$ for $i = 1, \dots, n$, the LAD estimator solves:
+
+$$
+\hat{\beta}_{\text{LAD}} = \arg\min_{\beta} \sum_{i=1}^n |y_i - x_i \beta|
+$$
+
+I investigate the asymptotic properties of the Least Absolute Deviation (LAD) estimator for linear models with polynomial regressors. My work aims to provide theoretical insights and practical improvements for modeling data with heterogeneous conditional quantiles and outliers.
+
+---
+
+## **Spatial Autoregressive Model**
+
+Spatial statistics deals with modeling spatially correlated data. One common model is the *Spatial Autoregressive Model (SAR)*.
+
+The SAR model is given by:
+
+$$
+\mathbf{y} = \rho \mathbf{W} \mathbf{y} + \mathbf{X} \boldsymbol{\beta} + \boldsymbol{\varepsilon}
+$$
+
+where:
+
+* $\mathbf{y}$ is the dependent variable,
+* $\mathbf{W}$ is a spatial weights matrix,
+* $\rho$ is the spatial autoregressive parameter,
+* $\mathbf{X}$ contains explanatory variables,
+* $\boldsymbol{\varepsilon}$ is the error term.
+
+My research aims to improve the performance of information-theoretic criteria, such as AIC and BIC, in estimating spatial autoregressive models. I explore these improvements under various conditions to ensure accurate model selection and parameter estimation in spatial data analysis.
+
+---
+
+## **Selected Publications**
 
 <!-- {% bibliography %} -->

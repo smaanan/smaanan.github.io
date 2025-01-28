@@ -151,7 +151,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site.\n\nlibrary(leaflet)\n\nleaflet() %&gt;%\n  addTiles() %&gt;%\n  setView(lng = -6.8498, lat = 33.9716, zoom = 14) %&gt;%  # Replace with your coordinates\n  addMarkers(lng = -6.8498, lat = 33.9716, popup = \"Mohammed V University\")\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "About this site.\n\n\nShow the code\nlibrary(leaflet)\n\nleaflet() %&gt;%\n  addTiles() %&gt;%\n  setView(lng = -10.072406, lat = 29.002824, zoom = 14) %&gt;%  \n  addMarkers(lng = -10.072406, lat = 29.002824, popup = \"ISPITS Guelmim\")\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "blog.html",
@@ -173,6 +173,27 @@
     "title": "Hello World!",
     "section": "",
     "text": "Welcome and thank you for taking the time to check my first blog post on this website. This page serves as draft only, I want to see what code and figures would look like in case I generate them from inside Quarto.\n\nA Box Plot\n\n\nCode\nboxplot(len ~ dose, data = ToothGrowth, frame = FALSE,\n        border = c(\"#999999\", \"#E69F00\", \"#56B4E9\"))\n\n\n\n\n\n\n\n\n\n\n\nA Line Plot\n\n\nCode\nx &lt;- 1:10\ny1 &lt;- x*x\ny2  &lt;- 2*y1\n\n# Create a first line\nplot(x, y1, type = \"b\", frame = FALSE, pch = 19, \n     col = \"red\", xlab = \"x\", ylab = \"y\")\n# Add a second line\nlines(x, y2, pch = 18, col = \"blue\", type = \"b\", lty = 2)\n# Add a legend to the plot\nlegend(\"topleft\", legend=c(\"Line 1\", \"Line 2\"),\n       col=c(\"red\", \"blue\"), lty = 1:2, cex=0.8)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "research.html#vector-autoregressive-model",
+    "href": "research.html#vector-autoregressive-model",
+    "title": "Research",
+    "section": "Vector Autoregressive Model",
+    "text": "Vector Autoregressive Model\nThe analysis of multivariate time series is crucial for modeling and forecasting interconnected time-dependent data. One of the most commonly used models in this field is the Vector Autoregressive (VAR) Model. The VAR model of order \\(p\\) is defined as:\n\\[\n\\mathbf{Y}_t = \\mathbf{A}_1 \\mathbf{Y}_{t-1} + \\mathbf{A}_2 \\mathbf{Y}_{t-2} + \\cdots + \\mathbf{A}_p \\mathbf{Y}_{t-p} + \\mathbf{u}_t\n\\]\nwhere:\n\n\\(\\mathbf{Y}_t\\) is a \\(k \\times 1\\) vector of time series variables.\n\\(\\mathbf{A}_i\\) are \\(k \\times k\\) coefficient matrices.\n\\(\\mathbf{u}_t\\) is a white noise vector with zero mean and covariance matrix \\(\\Sigma\\).\n\nMy research focuses on enhancing the accuracy of conditional independence graph estimation for multivariate time series data. This involves developing robust methodologies to capture and visualize the dynamic interdependencies between multiple time series variables."
+  },
+  {
+    "objectID": "research.html#quantile-regression",
+    "href": "research.html#quantile-regression",
+    "title": "Research",
+    "section": "Quantile Regression",
+    "text": "Quantile Regression\nQuantile regression provides a more comprehensive analysis of the relationship between variables than mean regression by modeling conditional quantiles.\nThe LAD regression estimates the median of the dependent variable by minimizing the sum of absolute residuals. Given data points \\((x_i, y_i)\\) for \\(i = 1, \\dots, n\\), the LAD estimator solves:\n\\[\n\\hat{\\beta}_{\\text{LAD}} = \\arg\\min_{\\beta} \\sum_{i=1}^n |y_i - x_i \\beta|\n\\]\nI investigate the asymptotic properties of the Least Absolute Deviation (LAD) estimator for linear models with polynomial regressors. My work aims to provide theoretical insights and practical improvements for modeling data with heterogeneous conditional quantiles and outliers."
+  },
+  {
+    "objectID": "research.html#spatial-autoregressive-model",
+    "href": "research.html#spatial-autoregressive-model",
+    "title": "Research",
+    "section": "Spatial Autoregressive Model",
+    "text": "Spatial Autoregressive Model\nSpatial statistics deals with modeling spatially correlated data. One common model is the Spatial Autoregressive Model (SAR).\nThe SAR model is given by:\n\\[\n\\mathbf{y} = \\rho \\mathbf{W} \\mathbf{y} + \\mathbf{X} \\boldsymbol{\\beta} + \\boldsymbol{\\varepsilon}\n\\]\nwhere:\n\n\\(\\mathbf{y}\\) is the dependent variable,\n\\(\\mathbf{W}\\) is a spatial weights matrix,\n\\(\\rho\\) is the spatial autoregressive parameter,\n\\(\\mathbf{X}\\) contains explanatory variables,\n\\(\\boldsymbol{\\varepsilon}\\) is the error term.\n\nMy research aims to improve the performance of information-theoretic criteria, such as AIC and BIC, in estimating spatial autoregressive models. I explore these improvements under various conditions to ensure accurate model selection and parameter estimation in spatial data analysis."
   },
   {
     "objectID": "teaching/biostatistics/biostatistics.html",

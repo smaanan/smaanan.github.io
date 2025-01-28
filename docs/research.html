@@ -50,8 +50,6 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,24 +89,35 @@ div.csl-indent {
   }
 }</script>
 
-<script type="text/javascript" charset="UTF-8">
-document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({
-  "notice_banner_type":"simple",
-  "consent_type":"implied",
-  "palette":"light",
-  "language":"en",
-  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
-  "notice_banner_reject_button_hide":false,
-  "preferences_center_close_button_hide":false,
-  "website_name":""
-  ,
-"language":"en"
-  });
-});
-</script> 
-  
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -129,6 +138,11 @@ cookieconsent.run({
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> <i class="bi bi-house-fill" role="img">
+</i> 
+<span class="menu-text">Home</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./research.html" aria-current="page"> <i class="bi bi-pc-display-horizontal" role="img">
 </i> 
@@ -166,7 +180,10 @@ cookieconsent.run({
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#publications" id="toc-publications" class="nav-link active" data-scroll-target="#publications">Publications</a></li>
+  <li><a href="#vector-autoregressive-model" id="toc-vector-autoregressive-model" class="nav-link active" data-scroll-target="#vector-autoregressive-model"><strong>Vector Autoregressive Model</strong></a></li>
+  <li><a href="#quantile-regression" id="toc-quantile-regression" class="nav-link" data-scroll-target="#quantile-regression"><strong>Quantile Regression</strong></a></li>
+  <li><a href="#spatial-autoregressive-model" id="toc-spatial-autoregressive-model" class="nav-link" data-scroll-target="#spatial-autoregressive-model"><strong>Spatial Autoregressive Model</strong></a></li>
+  <li><a href="#selected-publications" id="toc-selected-publications" class="nav-link" data-scroll-target="#selected-publications"><strong>Selected Publications</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -192,7 +209,51 @@ cookieconsent.run({
 </header>
 
 
-<section id="publications" class="level2">
+<hr>
+<section id="vector-autoregressive-model" class="level2">
+<h2 class="anchored" data-anchor-id="vector-autoregressive-model"><strong>Vector Autoregressive Model</strong></h2>
+<p>The analysis of multivariate time series is crucial for modeling and forecasting interconnected time-dependent data. One of the most commonly used models in this field is the <em>Vector Autoregressive (VAR) Model</em>. The VAR model of order <span class="math inline">\(p\)</span> is defined as:</p>
+<p><span class="math display">\[
+\mathbf{Y}_t = \mathbf{A}_1 \mathbf{Y}_{t-1} + \mathbf{A}_2 \mathbf{Y}_{t-2} + \cdots + \mathbf{A}_p \mathbf{Y}_{t-p} + \mathbf{u}_t
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(\mathbf{Y}_t\)</span> is a <span class="math inline">\(k \times 1\)</span> vector of time series variables.</li>
+<li><span class="math inline">\(\mathbf{A}_i\)</span> are <span class="math inline">\(k \times k\)</span> coefficient matrices.</li>
+<li><span class="math inline">\(\mathbf{u}_t\)</span> is a white noise vector with zero mean and covariance matrix <span class="math inline">\(\Sigma\)</span>.</li>
+</ul>
+<p>My research focuses on enhancing the accuracy of conditional independence graph estimation for multivariate time series data. This involves developing robust methodologies to capture and visualize the dynamic interdependencies between multiple time series variables.</p>
+<hr>
+</section>
+<section id="quantile-regression" class="level2">
+<h2 class="anchored" data-anchor-id="quantile-regression"><strong>Quantile Regression</strong></h2>
+<p>Quantile regression provides a more comprehensive analysis of the relationship between variables than mean regression by modeling conditional quantiles.</p>
+<p>The LAD regression estimates the median of the dependent variable by minimizing the sum of absolute residuals. Given data points <span class="math inline">\((x_i, y_i)\)</span> for <span class="math inline">\(i = 1, \dots, n\)</span>, the LAD estimator solves:</p>
+<p><span class="math display">\[
+\hat{\beta}_{\text{LAD}} = \arg\min_{\beta} \sum_{i=1}^n |y_i - x_i \beta|
+\]</span></p>
+<p>I investigate the asymptotic properties of the Least Absolute Deviation (LAD) estimator for linear models with polynomial regressors. My work aims to provide theoretical insights and practical improvements for modeling data with heterogeneous conditional quantiles and outliers.</p>
+<hr>
+</section>
+<section id="spatial-autoregressive-model" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-autoregressive-model"><strong>Spatial Autoregressive Model</strong></h2>
+<p>Spatial statistics deals with modeling spatially correlated data. One common model is the <em>Spatial Autoregressive Model (SAR)</em>.</p>
+<p>The SAR model is given by:</p>
+<p><span class="math display">\[
+\mathbf{y} = \rho \mathbf{W} \mathbf{y} + \mathbf{X} \boldsymbol{\beta} + \boldsymbol{\varepsilon}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(\mathbf{y}\)</span> is the dependent variable,</li>
+<li><span class="math inline">\(\mathbf{W}\)</span> is a spatial weights matrix,</li>
+<li><span class="math inline">\(\rho\)</span> is the spatial autoregressive parameter,</li>
+<li><span class="math inline">\(\mathbf{X}\)</span> contains explanatory variables,</li>
+<li><span class="math inline">\(\boldsymbol{\varepsilon}\)</span> is the error term.</li>
+</ul>
+<p>My research aims to improve the performance of information-theoretic criteria, such as AIC and BIC, in estimating spatial autoregressive models. I explore these improvements under various conditions to ensure accurate model selection and parameter estimation in spatial data analysis.</p>
+<hr>
+</section>
+<section id="selected-publications" class="level2">
 
 <!-- {% bibliography %} -->
 
@@ -200,7 +261,7 @@ cookieconsent.run({
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Publications</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Selected Publications</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-maanan16" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">S. Maanan, B. Dumitrescu, &amp; C. D. Giurcăneanu, Renormalized maximum likelihood for multivariate autoregressive models. <em>Proceedings of 2016 european signal processing conference (EUSIPCO 2016)</em> (Budapest, Hungary, 2016), pp. 193–197.</div>
 </div>
@@ -784,8 +845,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Copyright © 2023-2025 Saïd Maanan</p>
 </div>   
     <div class="nav-footer-center">
-
-<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+      &nbsp;
+    </div>
     <div class="nav-footer-right">
 <p>This website is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

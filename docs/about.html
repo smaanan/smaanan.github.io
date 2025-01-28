@@ -64,8 +64,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -104,24 +102,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-
-<script type="text/javascript" charset="UTF-8">
-document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({
-  "notice_banner_type":"simple",
-  "consent_type":"implied",
-  "palette":"light",
-  "language":"en",
-  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
-  "notice_banner_reject_button_hide":false,
-  "preferences_center_close_button_hide":false,
-  "website_name":""
-  ,
-"language":"en"
-  });
-});
-</script> 
-  
 <link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
 <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -153,6 +133,11 @@ cookieconsent.run({
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> <i class="bi bi-house-fill" role="img">
+</i> 
+<span class="menu-text">Home</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./research.html"> <i class="bi bi-pc-display-horizontal" role="img">
 </i> 
@@ -212,15 +197,18 @@ cookieconsent.run({
 
 <p>About this site.</p>
 <div class="cell">
+<details class="code-fold">
+<summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setView</span>(<span class="at">lng =</span> <span class="sc">-</span><span class="fl">6.8498</span>, <span class="at">lat =</span> <span class="fl">33.9716</span>, <span class="at">zoom =</span> <span class="dv">14</span>) <span class="sc">%&gt;%</span>  <span class="co"># Replace with your coordinates</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng =</span> <span class="sc">-</span><span class="fl">6.8498</span>, <span class="at">lat =</span> <span class="fl">33.9716</span>, <span class="at">popup =</span> <span class="st">"Mohammed V University"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setView</span>(<span class="at">lng =</span> <span class="sc">-</span><span class="fl">10.072406</span>, <span class="at">lat =</span> <span class="fl">29.002824</span>, <span class="at">zoom =</span> <span class="dv">14</span>) <span class="sc">%&gt;%</span>  </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng =</span> <span class="sc">-</span><span class="fl">10.072406</span>, <span class="at">lat =</span> <span class="fl">29.002824</span>, <span class="at">popup =</span> <span class="st">"ISPITS Guelmim"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-f8b68bf7374c10a04cec" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-f8b68bf7374c10a04cec">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[33.9716,-6.8498,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Mohammed V University",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[33.9716,-6.8498],14,[]],"limits":{"lat":[33.9716,33.9716],"lng":[-6.8498,-6.8498]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-dfef30506d940d6a6337" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-dfef30506d940d6a6337">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[29.002824,-10.072406,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"ISPITS Guelmim",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[29.002824,-10.072406],14,[]],"limits":{"lat":[29.002824,29.002824],"lng":[-10.072406,-10.072406]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -800,8 +788,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Copyright © 2023-2025 Saïd Maanan</p>
 </div>   
     <div class="nav-footer-center">
-
-<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+      &nbsp;
+    </div>
     <div class="nav-footer-right">
 <p>This website is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
