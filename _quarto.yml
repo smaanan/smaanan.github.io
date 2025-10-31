@@ -18,12 +18,12 @@ website:
       - href: research.qmd
         text: "Research"
         icon: pc-display-horizontal
-      - href: teaching/teaching.qmd
-        text: "Teaching"
-        icon: person-video3
-      - href: blog.qmd
-        text: "Blog"
-        icon: pencil-square
+      # - href: teaching/teaching.qmd
+        # text: "Teaching"
+        # icon: person-video3
+      # - href: blog.qmd
+        # text: "Blog"
+        # icon: pencil-square
       - href: about.qmd
         text: "About Me"
         icon: file-earmark-person
@@ -36,7 +36,7 @@ format:
       dark: darkly
     lang: en
     date-format: 'dddd MMMM YYYY'
-    email-obfuscation: javascript
+    # email-obfuscation: javascript
     link-external-newwindow: true
     css: styles.css
     toc: true
