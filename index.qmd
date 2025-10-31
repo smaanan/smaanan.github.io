@@ -19,7 +19,7 @@ about:
 
 ## {{< fa face-smile >}} Welcome
 
-Welcome to Saïd Maanan's corner! I am a passionate reseacher and educator and currently serve as a Lecturer in Biostatistics and Epidemiology at the Higher Institute of Nursing Professions and Health Techniques in Guelmim, Morocco.
+Welcome to Saïd Maanan's corner! I am a passionate reseacher and educator and currently serve as a Lecturer in Biostatistics and Epidemiology at the Higher Institute of Nursing Professions and Health Techniques in Al Hoceïma, Morocco.
 
 ## {{< fa graduation-cap >}} Education
 
@@ -29,4 +29,4 @@ I successfully earned my Ph.D. in Statistics from the University of Auckland on 
 
 After completing my Ph.D., I held various research and teaching positions. As a postdoctoral researcher at Aalto University's Department of Computer Science, I developed a profound understanding of the intersections between statistics and computer science. Additionally, my role as an adjunct lecturer in probability at Mohammed V University in Rabat enhanced my pedagogical skills through teaching a diverse group of students.
 
-Currently, I am a lecturer in biostatistics at the Higher Institute of Nursing and Health Technology in Guelmim, Morocco. This position has strengthened my practical applications of statistical methods in health care and medicine, sparking my passion for the field.
+Currently, I am a lecturer in biostatistics at the Higher Institute of Nursing and Health Technology in Al Hoceïma, Morocco. This position has strengthened my practical applications of statistical methods in health care and medicine, sparking my passion for the field.
