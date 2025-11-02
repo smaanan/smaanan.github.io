@@ -1,32 +1,14 @@
 ---
-title: "Saïd Maanan"
-about:
-  template: trestles
-  image: photo.jpg
-  image-shape: rounded
-  image-width: 15em
-  links: 
-    - icon: github
-      text: Github
-      href: https://github.com/smaanan
-    - icon: envelope
-      text: Email
-      href: "mailto:maanan.said@gmail.com"
-    - icon: file-text
-      text: Resume
-      href: Resume.pdf
+title: "Contact Information"
+format: html
 ---
 
-## {{< fa face-smile >}} Welcome
+**Saïd Maanan**  
+Lecturer in Biostatistics and Epidemiology  
+Higher Institute of Nursing Professions and Health Techniques (ISPITS)  
+Al Hoceïma, Morocco  
 
-Welcome to Saïd Maanan's corner! I am a passionate reseacher and educator and currently serve as a Lecturer in Biostatistics and Epidemiology at the Higher Institute of Nursing Professions and Health Techniques in Al Hoceïma, Morocco.
+**Email:** maanan.said[at]gmail.com  
 
-## {{< fa graduation-cap >}} Education
-
-I successfully earned my Ph.D. in Statistics from the University of Auckland on June 10, 2019. My doctoral research concentrated on innovating effective algorithms for estimating directed and undirected graphs in multivariate time series. Additionally, I introduced a novel information-theoretic criterion specifically tailored for optimal performance with time series data. Before pursuing my Ph.D., I achieved distinction in both a Master's degree in Statistics and a Bachelor's degree in Economics.
-
-## {{< fa building-columns >}} Experience
-
-After completing my Ph.D., I held various research and teaching positions. As a postdoctoral researcher at Aalto University's Department of Computer Science, I developed a profound understanding of the intersections between statistics and computer science. Additionally, my role as an adjunct lecturer in probability at Mohammed V University in Rabat enhanced my pedagogical skills through teaching a diverse group of students.
-
-Currently, I am a lecturer in biostatistics at the Higher Institute of Nursing and Health Technology in Al Hoceïma, Morocco. This position has strengthened my practical applications of statistical methods in health care and medicine, sparking my passion for the field.
+[Google Scholar](https://scholar.google.com/citations?user=l75oARMAAAAJ)  
+[ORCID](https://orcid.org/0000-0001-9365-7586)

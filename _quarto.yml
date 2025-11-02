@@ -18,14 +18,8 @@ website:
       - href: research.qmd
         text: "Research"
         icon: pc-display-horizontal
-      # - href: teaching/teaching.qmd
-        # text: "Teaching"
-        # icon: person-video3
-      # - href: blog.qmd
-        # text: "Blog"
-        # icon: pencil-square
-      - href: about.qmd
-        text: "About Me"
+      - href: cv.qmd
+        text: "Curriculum Vitae"
         icon: file-earmark-person
   cookie-consent: false
 

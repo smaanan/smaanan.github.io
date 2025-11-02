@@ -2,16 +2,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Saïd Maanan",
+    "title": "Contact Information",
     "section": "",
-    "text": "Welcome to Saïd Maanan’s corner! I am a passionate reseacher and educator and currently serve as a Lecturer in Biostatistics and Epidemiology at the Higher Institute of Nursing Professions and Health Techniques in Al Hoceïma, Morocco."
+    "text": "Saïd Maanan\nLecturer in Biostatistics and Epidemiology\nHigher Institute of Nursing Professions and Health Techniques (ISPITS)\nAl Hoceïma, Morocco\nEmail: maanan.said[at]gmail.com\nGoogle Scholar\nORCID\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "Saïd Maanan",
     "section": "",
-    "text": "Welcome to Saïd Maanan’s corner! I am a passionate reseacher and educator and currently serve as a Lecturer in Biostatistics and Epidemiology at the Higher Institute of Nursing Professions and Health Techniques in Al Hoceïma, Morocco."
+    "text": "Welcome to my personal website.\nI am Saïd Maanan, a Lecturer in Biostatistics and Epidemiology at the Higher Institute of Nursing Professions and Health Techniques in Al Hoceïma, Morocco.\nMy research interests include: - Statistical modeling and inference - Spatial econometrics - Information-theoretic model selection\nThis site provides a brief overview of my work and academic background.\nFor more details, please visit the Research and Curriculum Vitae pages."
   },
   {
     "objectID": "index.html#education",
@@ -145,5 +145,110 @@
     "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
     "section": "Feedback and Suggestions",
     "text": "Feedback and Suggestions\n\nShare your feedback on the course and suggest additional resources.\n\n\nDisclaimer: The resources provided are for educational purposes. Content from external links is owned by their respective creators."
+  },
+  {
+    "objectID": "index.html#contact-information",
+    "href": "index.html#contact-information",
+    "title": "Saïd Maanan",
+    "section": "",
+    "text": "Saïd Maanan\nLecturer in Biostatistics and Epidemiology\nHigher Institute of Nursing Professions and Health Techniques (ISPITS)\nAl Hoceïma, Morocco\nEmail 1: maanan.said[at]gmail.com\nEmail 2: said.maanan[at]ispits.ma\nGoogle Scholar\nORCID"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Download PDF file.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "cv.html#course-materials",
+    "href": "cv.html#course-materials",
+    "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
+    "section": "",
+    "text": "Syllabus: Download Syllabus\nLecture Notes: Access lecture notes and slides for each class session."
+  },
+  {
+    "objectID": "cv.html#reference-materials",
+    "href": "cv.html#reference-materials",
+    "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
+    "section": "Reference Materials",
+    "text": "Reference Materials\n\nRecommended Textbooks:\n\nIntroduction to Biostatistics\nStatistical Methods in Healthcare\n\nOnline Resources:\n\nBiostatistics Online: Interactive lessons and quizzes.\nKhan Academy - Statistics: Comprehensive statistics tutorials."
+  },
+  {
+    "objectID": "cv.html#problem-sets-and-solutions",
+    "href": "cv.html#problem-sets-and-solutions",
+    "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
+    "section": "Problem Sets and Solutions",
+    "text": "Problem Sets and Solutions\n\nAssignments: Practice your skills with problem sets.\nSolutions: Find solutions and explanations for assignments."
+  },
+  {
+    "objectID": "cv.html#statistical-software-guides",
+    "href": "cv.html#statistical-software-guides",
+    "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
+    "section": "Statistical Software Guides",
+    "text": "Statistical Software Guides\n\nR Programming Guide: Download PDF\nSAS Basics for Healthcare: Online Tutorial"
+  },
+  {
+    "objectID": "cv.html#data-sets",
+    "href": "cv.html#data-sets",
+    "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
+    "section": "Data Sets",
+    "text": "Data Sets\n\nExplore datasets for practice and assignments."
+  },
+  {
+    "objectID": "cv.html#links-to-research-papers",
+    "href": "cv.html#links-to-research-papers",
+    "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
+    "section": "Links to Research Papers",
+    "text": "Links to Research Papers\n\nStay updated on relevant research in biostatistics and anesthesia."
+  },
+  {
+    "objectID": "cv.html#webinars-and-workshops",
+    "href": "cv.html#webinars-and-workshops",
+    "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
+    "section": "Webinars and Workshops",
+    "text": "Webinars and Workshops\n\nAnnouncements and information about upcoming events."
+  },
+  {
+    "objectID": "cv.html#study-tips-and-resources",
+    "href": "cv.html#study-tips-and-resources",
+    "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
+    "section": "Study Tips and Resources",
+    "text": "Study Tips and Resources\n\nHelpful tips for studying biostatistics effectively.\nRecommended reading lists."
+  },
+  {
+    "objectID": "cv.html#useful-tools-and-calculators",
+    "href": "cv.html#useful-tools-and-calculators",
+    "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
+    "section": "Useful Tools and Calculators",
+    "text": "Useful Tools and Calculators\n\nOnline tools for statistical analysis and calculations."
+  },
+  {
+    "objectID": "cv.html#career-resources",
+    "href": "cv.html#career-resources",
+    "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
+    "section": "Career Resources",
+    "text": "Career Resources\n\nInformation about career opportunities in biostatistics.\nInternship programs and guidance for advanced studies."
+  },
+  {
+    "objectID": "cv.html#contact-information",
+    "href": "cv.html#contact-information",
+    "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
+    "section": "Contact Information",
+    "text": "Contact Information\n\nOffice hours and contact details for additional assistance."
+  },
+  {
+    "objectID": "cv.html#feedback-and-suggestions",
+    "href": "cv.html#feedback-and-suggestions",
+    "title": "Biostatistics Resources for Nursing Students (Anesthesia)",
+    "section": "Feedback and Suggestions",
+    "text": "Feedback and Suggestions\n\nShare your feedback on the course and suggest additional resources.\n\n\nDisclaimer: The resources provided are for educational purposes. Content from external links is owned by their respective creators."
+  },
+  {
+    "objectID": "cv.html#my-resume",
+    "href": "cv.html#my-resume",
+    "title": "Resume",
+    "section": "",
+    "text": "If the PDF doesn’t display, you can open it in a new tab."
   }
 ]
