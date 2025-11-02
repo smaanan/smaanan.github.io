@@ -26,18 +26,50 @@ strip_braces <- function(x) {
   gsub("[{}]", "", y, perl = TRUE)
 }
 
+# fmt_authors_card <- function(entry) {
+#   au <- entry$author
+#   if (is.null(au) || length(au) == 0) return(NA_character_)
+#   fmt_one <- function(a) {
+#     fam_vec <- a$family
+#     if (length(fam_vec)) paste(as.character(fam_vec), collapse = " ") else ""
+#   }
+#   pieces <- vapply(au, fmt_one, character(1))
+#   pieces <- pieces[nzchar(pieces)]
+#   if (!length(pieces)) return(NA_character_)
+#   if (length(pieces) == 1) pieces
+#   else paste(paste(pieces[-length(pieces)], collapse = ", "), "&", pieces[length(pieces)])
+# }
+
 fmt_authors_card <- function(entry) {
   au <- entry$author
   if (is.null(au) || length(au) == 0) return(NA_character_)
-  fmt_one <- function(a) {
+  
+  # Extract author names
+  author_names <- vapply(au, function(a) {
     fam_vec <- a$family
     if (length(fam_vec)) paste(as.character(fam_vec), collapse = " ") else ""
+  }, character(1))
+  
+  author_names <- author_names[nzchar(author_names)]
+  if (length(author_names) == 0) return(NA_character_)
+  
+  # Bold the first author
+  if (length(author_names) > 0) {
+    author_names[1] <- paste0("<strong>", author_names[1], "</strong>")
   }
-  pieces <- vapply(au, fmt_one, character(1))
-  pieces <- pieces[nzchar(pieces)]
-  if (!length(pieces)) return(NA_character_)
-  if (length(pieces) == 1) pieces
-  else paste(paste(pieces[-length(pieces)], collapse = ", "), "&", pieces[length(pieces)])
+  
+  # Format the list
+  if (length(author_names) == 1) {
+    author_names
+  } else if (length(author_names) == 2) {
+    paste(author_names, collapse = " & ")
+  } else {
+    paste(
+      paste(author_names[-length(author_names)], collapse = ", "),
+      "&",
+      author_names[length(author_names)]
+    )
+  }
 }
 
 get_abstract <- function(entry) {
