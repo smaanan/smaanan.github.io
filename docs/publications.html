@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>publications – Saïd Maanan</title>
+<title>Publications – Saïd Maanan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -143,19 +143,331 @@ div.csl-indent {
 
 
 
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Publications</li>
+  </ol>
+</nav>
+<p>This page lists all papers published by Dr.&nbsp;Girard, organized by year of publication. Click a paper’s <em>title</em> to visit the publisher page and access the official version. Use <em>Abstract</em> to reveal the summary, <em>Citation</em> for the APA 7th-edition reference, and <em>BibTeX</em> to view the BibTeX entry. Clicking the link a second time will close the display again. <em>Preprint</em> links to a free author version (not the final typeset copy), and <em>Materials</em> leads to an open repository with data, code, and other open-science resources. <span style="font-size:0.9rem; opacity:0.8; margin-bottom:0.5rem;">★ = Work led by our lab (established in 2020)</span></p>
+<div class="cell">
+<style type="text/css">
+/* Group header */
+.year-group { margin: 28px 0 8px; }
+.year-title { margin: 0; font-size: 1.35rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 2px; }
 
+/* Card + layout */
+.pub-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px 16px 10px 16px;
+  margin: 14px 0;
+  background: #fff;
+}
+.pub-title { font-weight: 600; font-size: 1.05rem; margin-bottom: 4px; }
+.pub-title a { text-decoration: none; }
+.pub-meta  { color: #555; font-size: 0.95rem; margin-bottom: 8px; }
 
+/* Actions row */
+.pub-actions {
+  display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center;
+  margin-top: 8px; margin-bottom: 8px;
+}
+.pub-actions a {
+  text-decoration: none; font-size: 0.92rem;
+  border-bottom: 1px dotted #999; color: #0b66c3; cursor: pointer;
+}
+.pub-actions a.external { border-bottom-style: solid; }
 
+/* Toggle area */
+.toggle-area {
+  display: none; position: relative;
+  border: 1px solid #000; border-radius: 10px;
+  padding: 12px 44px 12px 12px; background: #fafafa;
+  margin-top: 10px; overflow: auto;
+}
+.toggle-area .panel-label {
+  font-size: 0.82rem; color: #333; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.03em;
+  opacity: 0.85; margin-bottom: 6px;
+}
+.toggle-area pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; }
+.toggle-area .content p { margin: 0 0 0.6em 0; }
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-maanan16" class="csl-entry" role="listitem">
-Maanan, S., B. Dumitrescu, and C. D. Giurcăneanu. 2016. <span>“Renormalized Maximum Likelihood for Multivariate Autoregressive Models.”</span> In <em>Proceedings of 2016 European Signal Processing Conference (EUSIPCO 2016)</em>, 193–97. Budapest, Hungary.
+/* Copy button */
+.copy-btn {
+  position: absolute; top: 6px; right: 6px;
+  border: 1px solid #ddd; background: #fff; font-size: 0.85rem;
+  padding: 4px 8px; border-radius: 6px; cursor: pointer;
+}
+.copy-btn:active { transform: translateY(1px); }
+.copy-toast {
+  position: absolute; top: 6px; right: 70px; font-size: 0.8rem;
+  background: #333; color: #fff; padding: 3px 7px; border-radius: 6px; display: none;
+}
+
+/* Lab-led star on Abstract link */
+.pub-actions .lab-star {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #ffb300;
+  user-select: none;
+}
+.pub-actions .lab-star[role="img"] {
+  cursor: default;
+}
+.pub-actions .lab-star .sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+</style>
 </div>
-<div id="ref-maanan17" class="csl-entry" role="listitem">
-———. 2017. <span>“Conditional Independence Graphs for Multivariate Autoregressive Models by Convex Optimization: Efficient Algorithms.”</span> <em>Signal Processing</em> 133: 122–34.
+<script>
+(function() {
+  function getCard(el) {
+    while (el && !el.classList?.contains('pub-card')) el = el.parentNode;
+    return el;
+  }
+  function showPanel(card, label, html, mode) {
+    const area = card.querySelector('.toggle-area');
+    const labelEl = area.querySelector('.panel-label');
+    const contentEl = area.querySelector('.content');
+
+    // Toggle: if clicking same action while open, collapse
+    const current = area.getAttribute('data-current');
+    if (current === mode && area.style.display === 'block') {
+      area.style.display = 'none';
+      area.setAttribute('data-current', '');
+      return;
+    }
+
+    labelEl.textContent = label;
+    if (mode === 'bib') {
+      contentEl.innerHTML = '';
+      const pre = document.createElement('pre');
+      pre.textContent = html;
+      contentEl.appendChild(pre);
+    } else if (mode === 'abstract') {
+      contentEl.textContent = html;
+    } else {
+      contentEl.innerHTML = html; // citation HTML
+    }
+    area.style.display = 'block';
+    area.setAttribute('data-current', mode);
+  }
+
+  // Resource link handler (toggle)
+  document.addEventListener('click', function(evt) {
+    const a = evt.target.closest('a[data-action]');
+    if (!a) return;
+    const action = a.getAttribute('data-action');
+    const card   = getCard(a);
+    if (!card) return;
+    evt.preventDefault();
+
+    if (action === 'abstract' || action === 'citation' || action === 'bib') {
+      const key = card.getAttribute('data-key');  // <-- Pandoc ref id suffix
+
+      // Build label + payload
+      let label = action === 'citation' ? 'Citation' : (action === 'bib' ? 'BibTeX' : 'Abstract');
+      let html  = '';
+
+      if (action === 'abstract') {
+        const payloadEl = card.querySelector('.payload-abstract');
+        const text = (payloadEl?.textContent || 'No abstract available.').trim();
+        showPanel(card, label, text, 'abstract');
+        return;
+      }
+
+      if (action === 'citation') {
+        // Pull APA-formatted HTML from hidden #refs list: <div id="ref-KEY">
+        const ref = document.querySelector('#ref-' + key);
+        html = (ref ? ref.innerHTML : 'Citation unavailable.').trim();
+        showPanel(card, label, html, 'citation');
+        return;
+      }
+
+      if (action === 'bib') {
+        const payloadEl = card.querySelector('.payload-bibtex');
+        const text = (payloadEl?.textContent || 'No BibTeX available.').trim();
+        showPanel(card, label, text, 'bib');
+        return;
+      }
+    }
+  }, false);
+
+  // Copy button
+  document.addEventListener('click', function(evt) {
+    const btn = evt.target.closest('.copy-btn');
+    if (!btn) return;
+    const card = getCard(btn);
+    const area = card.querySelector('.toggle-area');
+    const contentEl = area.querySelector('.content');
+
+    let textToCopy = '';
+    const pre = contentEl.querySelector('pre');
+    if (pre) textToCopy = pre.textContent;
+    else textToCopy = contentEl.innerText;
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      const toast = area.querySelector('.copy-toast');
+      toast.style.display = 'inline-block';
+      setTimeout(() => { toast.style.display = 'none'; }, 1200);
+    }).catch(() => {
+      const ta = document.createElement('textarea');
+      ta.value = textToCopy;
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(ta);
+    });
+  }, false);
+})();
+</script>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2018">2018</h2>
+<div>
+<div class="pub-card" data-key="Maanan2018">
+<div class="pub-title">
+<a href="https://doi.org/10.3390/e20010076" target="_blank" rel="noopener">Maximum Entropy Expectation-Maximization Algorithm for Fitting Latent-Variable Graphical Models to Multivariate Time Series</a>
 </div>
-<div id="ref-maanan18" class="csl-entry" role="listitem">
-———. 2018. <span>“Maximum Entropy Expectation-Maximization Algorithm for Fitting Latent-Variable Graphical Models to Multivariate Time Series.”</span> <em>Entropy</em> 20 (1). <a href="http://www.mdpi.com/1099-4300/20/1/76">http://www.mdpi.com/1099-4300/20/1/76</a>.
+<div class="pub-meta">
+Maanan, Dumitrescu &amp; Giurcăneanu
+<br>
+<em>Entropy</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-bibtex">@article{Maanan2018,
+  author = {Sa{\"\i}d Maanan and Bogdan Dumitrescu and Ciprian Giurc{\u a}neanu},
+  journal = {Entropy},
+  title = {Maximum Entropy Expectation-Maximization Algorithm for Fitting Latent-Variable Graphical Models to Multivariate Time Series},
+  year = {2018},
+  month = {jan},
+  number = {1},
+  pages = {76},
+  volume = {20},
+  doi = {10.3390/e20010076},
+  publisher = {MDPI AG}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2017">2017</h2>
+<div>
+<div class="pub-card" data-key="Maanan2017">
+<div class="pub-title">
+<a href="https://doi.org/10.1016/j.sigpro.2016.10.023" target="_blank" rel="noopener">Conditional independence graphs for multivariate autoregressive models by convex optimization: Efficient algorithms</a>
+</div>
+<div class="pub-meta">
+Maanan, Dumitrescu &amp; Giurcăneanu
+<br>
+<em>Signal Processing</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-bibtex">@article{Maanan2017,
+  author = {Sa{\"\i}d Maanan and Bogdan Dumitrescu and Ciprian Doru Giurc{\u a}neanu},
+  journal = {Signal Processing},
+  title = {Conditional independence graphs for multivariate autoregressive models by convex optimization: Efficient algorithms},
+  year = {2017},
+  month = {apr},
+  pages = {122--134},
+  volume = {133},
+  doi = {10.1016/j.sigpro.2016.10.023},
+  publisher = {Elsevier BV}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2016">2016</h2>
+<div>
+<div class="pub-card" data-key="Maanan2016">
+<div class="pub-title">
+<a href="https://doi.org/10.1109/eusipco.2016.7760228" target="_blank" rel="noopener">Renormalized maximum likelihood for multivariate autoregressive models</a>
+</div>
+<div class="pub-meta">
+Maanan, Dumitrescu &amp; Giurcaneanu
+<br>
+<em>2016 24th European Signal Processing Conference (EUSIPCO)</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-bibtex">@inproceedings{Maanan2016,
+  author = {Said Maanan and Bogdan Dumitrescu and Ciprian Doru Giurcaneanu},
+  booktitle = {2016 24th European Signal Processing Conference (EUSIPCO)},
+  title = {Renormalized maximum likelihood for multivariate autoregressive models},
+  year = {2016},
+  month = {aug},
+  pages = {150--154},
+  publisher = {IEEE},
+  doi = {10.1109/eusipco.2016.7760228}
+}</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Maanan2016" class="csl-entry" role="listitem">
+Maanan, S., Dumitrescu, B., &amp; Giurcaneanu, C. D. (2016). Renormalized maximum likelihood for multivariate autoregressive models. <em>2016 24th European Signal Processing Conference (EUSIPCO)</em>, 150–154. <a href="https://doi.org/10.1109/eusipco.2016.7760228">https://doi.org/10.1109/eusipco.2016.7760228</a>
+</div>
+<div id="ref-Maanan2018" class="csl-entry" role="listitem">
+Maanan, S., Dumitrescu, B., &amp; Giurcăneanu, C. (2018). Maximum entropy expectation-maximization algorithm for fitting latent-variable graphical models to multivariate time series. <em>Entropy</em>, <em>20</em>(1), 76. <a href="https://doi.org/10.3390/e20010076">https://doi.org/10.3390/e20010076</a>
+</div>
+<div id="ref-Maanan2017" class="csl-entry" role="listitem">
+Maanan, S., Dumitrescu, B., &amp; Giurcăneanu, C. D. (2017). Conditional independence graphs for multivariate autoregressive models by convex optimization: Efficient algorithms. <em>Signal Processing</em>, <em>133</em>, 122–134. <a href="https://doi.org/10.1016/j.sigpro.2016.10.023">https://doi.org/10.1016/j.sigpro.2016.10.023</a>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
