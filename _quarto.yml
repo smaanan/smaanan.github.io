@@ -15,7 +15,7 @@ website:
       - href: index.qmd
         text: "Home"
         icon: house-fill
-      - href: research.qmd
+      - href: publications.qmd
         text: "Research"
         icon: pc-display-horizontal
       - href: cv.qmd
