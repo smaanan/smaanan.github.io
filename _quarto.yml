@@ -11,7 +11,7 @@ website:
   back-to-top-navigation: true
   navbar:
     search: false
-    left:
+    right:
       - href: index.qmd
         text: "Home"
         icon: house-fill
@@ -36,10 +36,10 @@ format:
       dark: darkly
     lang: en
     date-format: 'dddd MMMM YYYY'
-    # email-obfuscation: javascript
+    email-obfuscation: javascript
     link-external-newwindow: true
     css: styles.css
-    toc: true
+    toc: false
     page-layout: full
 
 editor: source
