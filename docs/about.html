@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Selected Publications – Saïd Maanan</title>
+<title>About – Saïd Maanan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -68,6 +102,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.2.3/leaflet.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -95,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./publications.html" aria-current="page"> <i class="bi bi-pc-display-horizontal" role="img">
+    <a class="nav-link" href="./publications.html"> <i class="bi bi-pc-display-horizontal" role="img">
 </i> 
 <span class="menu-text">Research</span></a>
   </li>  
@@ -122,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Selected Publications</h1>
+<h1 class="title">About</h1>
 </div>
 
 
@@ -139,309 +183,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>About this site.</p>
 <div class="cell">
-<style type="text/css">
-/* Group header */
-.year-group { margin: 28px 0 8px; }
-.year-title { margin: 0; font-size: 1.35rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 2px; }
-
-/* Card + layout */
-.pub-card {
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
-  padding: 16px 16px 10px 16px;
-  margin: 14px 0;
-  background: #fff;
-}
-.pub-title { font-weight: 600; font-size: 1.05rem; margin-bottom: 4px; }
-.pub-title a { text-decoration: none; }
-.pub-meta  { color: #555; font-size: 0.95rem; margin-bottom: 8px; }
-
-/* Actions row */
-.pub-actions {
-  display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center;
-  margin-top: 8px; margin-bottom: 8px;
-}
-.pub-actions a {
-  text-decoration: none; font-size: 0.92rem;
-  border-bottom: 1px dotted #999; color: #0b66c3; cursor: pointer;
-}
-.pub-actions a.external { border-bottom-style: solid; }
-
-/* Toggle area */
-.toggle-area {
-  display: none; position: relative;
-  border: 1px solid #000; border-radius: 10px;
-  padding: 12px 44px 12px 12px; background: #fafafa;
-  margin-top: 10px; overflow: auto;
-}
-.toggle-area .panel-label {
-  font-size: 0.82rem; color: #333; font-weight: 600;
-  text-transform: uppercase; letter-spacing: 0.03em;
-  opacity: 0.85; margin-bottom: 6px;
-}
-.toggle-area pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; }
-.toggle-area .content p { margin: 0 0 0.6em 0; }
-
-/* Copy button */
-.copy-btn {
-  position: absolute; top: 6px; right: 6px;
-  border: 1px solid #ddd; background: #fff; font-size: 0.85rem;
-  padding: 4px 8px; border-radius: 6px; cursor: pointer;
-}
-.copy-btn:active { transform: translateY(1px); }
-.copy-toast {
-  position: absolute; top: 6px; right: 70px; font-size: 0.8rem;
-  background: #333; color: #fff; padding: 3px 7px; border-radius: 6px; display: none;
-}
-
-/* Lab-led star on Abstract link */
-.pub-actions .lab-star {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.9rem;
-  line-height: 1;
-  color: #ffb300;
-  user-select: none;
-}
-.pub-actions .lab-star[role="img"] {
-  cursor: default;
-}
-.pub-actions .lab-star .sr-only {
-  position: absolute;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px; overflow: hidden;
-  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
-}
-</style>
-</div>
-<script>
-(function() {
-  function getCard(el) {
-    while (el && !el.classList?.contains('pub-card')) el = el.parentNode;
-    return el;
-  }
-  function showPanel(card, label, html, mode) {
-    const area = card.querySelector('.toggle-area');
-    const labelEl = area.querySelector('.panel-label');
-    const contentEl = area.querySelector('.content');
-
-    // Toggle: if clicking same action while open, collapse
-    const current = area.getAttribute('data-current');
-    if (current === mode && area.style.display === 'block') {
-      area.style.display = 'none';
-      area.setAttribute('data-current', '');
-      return;
-    }
-
-    labelEl.textContent = label;
-    if (mode === 'bib') {
-      contentEl.innerHTML = '';
-      const pre = document.createElement('pre');
-      pre.textContent = html;
-      contentEl.appendChild(pre);
-    } else if (mode === 'abstract') {
-      contentEl.textContent = html;
-    } else {
-      contentEl.innerHTML = html; // citation HTML
-    }
-    area.style.display = 'block';
-    area.setAttribute('data-current', mode);
-  }
-
-  // Resource link handler (toggle)
-  document.addEventListener('click', function(evt) {
-    const a = evt.target.closest('a[data-action]');
-    if (!a) return;
-    const action = a.getAttribute('data-action');
-    const card   = getCard(a);
-    if (!card) return;
-    evt.preventDefault();
-
-    if (action === 'abstract' || action === 'citation' || action === 'bib') {
-      const key = card.getAttribute('data-key');  // <-- Pandoc ref id suffix
-
-      // Build label + payload
-      let label = action === 'citation' ? 'Citation' : (action === 'bib' ? 'BibTeX' : 'Abstract');
-      let html  = '';
-
-      if (action === 'abstract') {
-        const payloadEl = card.querySelector('.payload-abstract');
-        const text = (payloadEl?.textContent || 'No abstract available.').trim();
-        showPanel(card, label, text, 'abstract');
-        return;
-      }
-
-      if (action === 'citation') {
-        // Pull APA-formatted HTML from hidden #refs list: <div id="ref-KEY">
-        const ref = document.querySelector('#ref-' + key);
-        html = (ref ? ref.innerHTML : 'Citation unavailable.').trim();
-        showPanel(card, label, html, 'citation');
-        return;
-      }
-
-      if (action === 'bib') {
-        const payloadEl = card.querySelector('.payload-bibtex');
-        const text = (payloadEl?.textContent || 'No BibTeX available.').trim();
-        showPanel(card, label, text, 'bib');
-        return;
-      }
-    }
-  }, false);
-
-  // Copy button
-  document.addEventListener('click', function(evt) {
-    const btn = evt.target.closest('.copy-btn');
-    if (!btn) return;
-    const card = getCard(btn);
-    const area = card.querySelector('.toggle-area');
-    const contentEl = area.querySelector('.content');
-
-    let textToCopy = '';
-    const pre = contentEl.querySelector('pre');
-    if (pre) textToCopy = pre.textContent;
-    else textToCopy = contentEl.innerText;
-
-    navigator.clipboard.writeText(textToCopy).then(() => {
-      const toast = area.querySelector('.copy-toast');
-      toast.style.display = 'inline-block';
-      setTimeout(() => { toast.style.display = 'none'; }, 1200);
-    }).catch(() => {
-      const ta = document.createElement('textarea');
-      ta.value = textToCopy;
-      document.body.appendChild(ta);
-      ta.select();
-      try { document.execCommand('copy'); } catch (e) {}
-      document.body.removeChild(ta);
-    });
-  }, false);
-})();
-</script>
-<div class="cell">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setView</span>(<span class="at">lng =</span> <span class="sc">-</span><span class="fl">10.072406</span>, <span class="at">lat =</span> <span class="fl">29.002824</span>, <span class="at">zoom =</span> <span class="dv">14</span>) <span class="sc">%&gt;%</span>  </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng =</span> <span class="sc">-</span><span class="fl">10.072406</span>, <span class="at">lat =</span> <span class="fl">29.002824</span>, <span class="at">popup =</span> <span class="st">"ISPITS Guelmim"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output-display">
-<div>
-<div class="year-group">
-<h2 class="year-title anchored" id="y-2018">2018</h2>
-<div>
-<div class="pub-card" data-key="Maanan2018">
-<div class="pub-title">
-<a href="https://doi.org/10.3390/e20010076" target="_blank" rel="noopener">Maximum Entropy Expectation-Maximization Algorithm for Fitting Latent-Variable Graphical Models to Multivariate Time Series</a>
-</div>
-<div class="pub-meta">
-Maanan, Dumitrescu &amp; Giurcăneanu
-<br>
-<em>Entropy</em>
-</div>
-<div class="pub-actions">
-<a href="#" data-action="abstract" role="button">Abstract</a>
-<a href="#" data-action="citation" role="button">Citation</a>
-<a href="#" data-action="bib" role="button">BibTeX</a>
-</div>
-<div class="toggle-area" data-current="">
-<button class="copy-btn">Copy</button>
-<span class="copy-toast">Copied!</span>
-<div class="panel-label">—</div>
-<div class="content"></div>
-</div>
-<div style="display:none;">
-<div class="payload-abstract">NA</div>
-<div class="payload-bibtex">@article{Maanan2018,
-  author = {Sa{\"\i}d Maanan and Bogdan Dumitrescu and Ciprian Giurc{\u a}neanu},
-  journal = {Entropy},
-  title = {Maximum Entropy Expectation-Maximization Algorithm for Fitting Latent-Variable Graphical Models to Multivariate Time Series},
-  year = {2018},
-  month = {jan},
-  number = {1},
-  pages = {76},
-  volume = {20},
-  doi = {10.3390/e20010076},
-  publisher = {MDPI AG}
-}</div>
-</div>
-</div>
-</div>
-</div>
-<div class="year-group">
-<h2 class="year-title anchored" id="y-2017">2017</h2>
-<div>
-<div class="pub-card" data-key="Maanan2017">
-<div class="pub-title">
-<a href="https://doi.org/10.1016/j.sigpro.2016.10.023" target="_blank" rel="noopener">Conditional independence graphs for multivariate autoregressive models by convex optimization: Efficient algorithms</a>
-</div>
-<div class="pub-meta">
-Maanan, Dumitrescu &amp; Giurcăneanu
-<br>
-<em>Signal Processing</em>
-</div>
-<div class="pub-actions">
-<a href="#" data-action="abstract" role="button">Abstract</a>
-<a href="#" data-action="citation" role="button">Citation</a>
-<a href="#" data-action="bib" role="button">BibTeX</a>
-</div>
-<div class="toggle-area" data-current="">
-<button class="copy-btn">Copy</button>
-<span class="copy-toast">Copied!</span>
-<div class="panel-label">—</div>
-<div class="content"></div>
-</div>
-<div style="display:none;">
-<div class="payload-abstract">NA</div>
-<div class="payload-bibtex">@article{Maanan2017,
-  author = {Sa{\"\i}d Maanan and Bogdan Dumitrescu and Ciprian Doru Giurc{\u a}neanu},
-  journal = {Signal Processing},
-  title = {Conditional independence graphs for multivariate autoregressive models by convex optimization: Efficient algorithms},
-  year = {2017},
-  month = {apr},
-  pages = {122--134},
-  volume = {133},
-  doi = {10.1016/j.sigpro.2016.10.023},
-  publisher = {Elsevier BV}
-}</div>
-</div>
-</div>
-</div>
-</div>
-<div class="year-group">
-<h2 class="year-title anchored" id="y-2016">2016</h2>
-<div>
-<div class="pub-card" data-key="Maanan2016">
-<div class="pub-title">
-<a href="https://doi.org/10.1109/eusipco.2016.7760228" target="_blank" rel="noopener">Renormalized maximum likelihood for multivariate autoregressive models</a>
-</div>
-<div class="pub-meta">
-Maanan, Dumitrescu &amp; Giurcaneanu
-<br>
-<em>2016 24th European Signal Processing Conference (EUSIPCO)</em>
-</div>
-<div class="pub-actions">
-<a href="#" data-action="abstract" role="button">Abstract</a>
-<a href="#" data-action="citation" role="button">Citation</a>
-<a href="#" data-action="bib" role="button">BibTeX</a>
-</div>
-<div class="toggle-area" data-current="">
-<button class="copy-btn">Copy</button>
-<span class="copy-toast">Copied!</span>
-<div class="panel-label">—</div>
-<div class="content"></div>
-</div>
-<div style="display:none;">
-<div class="payload-abstract">NA</div>
-<div class="payload-bibtex">@inproceedings{Maanan2016,
-  author = {Said Maanan and Bogdan Dumitrescu and Ciprian Doru Giurcaneanu},
-  booktitle = {2016 24th European Signal Processing Conference (EUSIPCO)},
-  title = {Renormalized maximum likelihood for multivariate autoregressive models},
-  year = {2016},
-  month = {aug},
-  pages = {150--154},
-  publisher = {IEEE},
-  doi = {10.1109/eusipco.2016.7760228}
-}</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-69e1c533f425d76cc8ad" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-69e1c533f425d76cc8ad">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[29.002824,-10.072406,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"ISPITS Guelmim",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[29.002824,-10.072406],14,[]],"limits":{"lat":[29.002824,29.002824],"lng":[-10.072406,-10.072406]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
