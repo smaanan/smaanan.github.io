@@ -12,5 +12,5 @@ library(leaflet)
 leaflet() %>%
   addTiles() %>%
   setView(lng = -10.072406, lat = 29.002824, zoom = 14) %>%  
-  addMarkers(lng = -10.072406, lat = 29.002824, popup = "ISPITS Guelmim")
+  addMarkers(lng = -10.072406, lat = 29.002824, popup = "ISPITS Al Hoceïma")
 ```
